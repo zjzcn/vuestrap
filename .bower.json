@@ -1,0 +1,13 @@
+{
+  "name": "vue-components",
+  "homepage": "https://github.com/kzima/vue-components",
+  "_release": "90c45f284e",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "90c45f284eabc872370cc208d62a587418cb09b5"
+  },
+  "_source": "git://github.com/kzima/vue-components.git",
+  "_target": "*",
+  "_originalSource": "kzima/vue-components"
+}

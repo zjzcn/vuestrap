@@ -1,0 +1,6 @@
+<ol class="breadcrumb" style="margin-bottom: 5px;">
+    <li v-repeat="list" v-class="active: active">
+        <a href="{{href}}" v-if="!active">{{name}}</a>
+        <span v-if="active">{{name}}</span>
+    </li>
+</ol>
