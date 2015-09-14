@@ -4,27 +4,16 @@ Extend Bootstrap 4 with extra "plug and play" components and simplify your web d
 
 The idea
 --------
-- cherry pick components, B4 is now modular
-- components are descriptive
-- component specific mixins belong to it's components:
-	-- alerts
-	-- buttons
-	-- forms
-	-- grid -> now in global/bootstrap_grid
-	-- images
-	-- labels
-	-- list-group
-	-- navbar-align in navbar (commented out)
-	-- nav-dividers in dropdown
-	-- pagination
-	-- progress
-	-- table row in tables
+- cherry pick components from library
+- cleaner code thanks to custom tags
+- any component within application has consistent look and feel 
+- easy to theme
 
-What is diffrent to B4
+Updated Boostrap structure in VueStrap:
 --------
-- icons are svg's for better rendering on high resolution devices
-- common stuff lands in core folder like icons, grid and normalize/reboot, utilities to avoid rendering for each component
-- core stuff needs to be referenced separately in the app
-- every component is compiled separately by Webpack
-- themes can be overwritten in Webpack compilation process by app specific theme modifications
-- theme is a bootstrap file for variables and mixins
+- icons, grid, normalize/reboot and utilities are in core folder, imported on the app level (to avoid css rendering during each component's compilation process)
+- _variables.scss and _mixins.scss are now part of one file theme/bootstrap.scss
+- core/ folder includes SVG icons 
+- mixins are in the root folder to be easily imported in the theme/bootstrap.scss and/or application itself
+- added extra folder for community components that meet VueStrap guidelines http://vuestrap.gitbooks.io/docs/content/guide.html
+- components/ folder contains the same components from Bootstrap 4 with additional html tamplates and javascript files
