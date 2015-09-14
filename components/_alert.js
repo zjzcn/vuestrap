@@ -12,8 +12,7 @@ module.exports = {
         },
         type: {
             type: String,
-            default: '',
-            required: true
+            default: 'success'
         },
         message: {
             type: String,
