@@ -1,0 +1,25 @@
+{
+  "name": "vuestrap",
+  "version": "0.1.0",
+  "description": "Bootstrap 4 simplified",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gritcode/vuestrap.git"
+  },
+  "keywords": [
+    "Bootstrap 4",
+    "Web",
+    "Components",
+    "Polymer"
+  ],
+  "author": "Kris Zima <kris@mosquito.ie> (https://github.com/kzima)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gritcode/vuestrap/issues"
+  },
+  "homepage": "https://github.com/gritcode/vuestrap#readme"
+}
