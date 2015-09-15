@@ -2,6 +2,6 @@
 
 require('./_carousel.scss');
 module.exports = {
-    template: require('./_carousel.html'),
+    template: require('./carousel.html'),
     replace: true
 };

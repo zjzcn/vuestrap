@@ -1,5 +1,5 @@
 require('./_forms.scss');
-var uniqueId = require('./_make-id.js');
+var uniqueId = require('./make-id.js');
 module.exports = {
     template: require('./_form-select.html'),
     replace: true,

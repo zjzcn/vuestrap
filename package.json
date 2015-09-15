@@ -16,10 +16,20 @@
     "Components",
     "Polymer"
   ],
-  "author": "Kris Zima <kris@mosquito.ie> (https://github.com/kzima)",
+  "author": {
+    "name": "Kris Zima",
+    "email": "kris@mosquito.ie",
+    "url": "https://github.com/kzima"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gritcode/vuestrap/issues"
   },
-  "homepage": "https://github.com/gritcode/vuestrap#readme"
+  "homepage": "https://github.com/gritcode/vuestrap#readme",
+  "readme": "VueStrap\r\n========\r\nExtend Bootstrap 4 with extra \"plug and play\" components and simplify your web development.\r\n\r\nThe idea\r\n--------\r\n- cherry pick components from library\r\n- cleaner code thanks to custom tags\r\n- any component within application has consistent look and feel \r\n- easy to theme\r\n\r\nUpdated Boostrap structure in VueStrap:\r\n--------\r\n- icons, grid, normalize/reboot and utilities are in core folder, imported on the app level (to avoid css rendering during each component's compilation process)\r\n- _variables.scss and _mixins.scss are now part of one file theme/bootstrap.scss\r\n- core/ folder includes SVG icons \r\n- mixins are in the root folder to be easily imported in the theme/bootstrap.scss and/or application itself\r\n- added extra folder for community components that meet VueStrap guidelines http://vuestrap.gitbooks.io/docs/content/guide.html\r\n- components/ folder contains the same components from Bootstrap 4 with additional html tamplates and javascript files",
+  "readmeFilename": "README.md",
+  "gitHead": "86937b51536d00e1edf69c789707ba520f772602",
+  "_id": "vuestrap@0.1.0",
+  "_shasum": "607c7071a2972390508be656095a9e5156fb82d6",
+  "_from": "vuestrap@*"
 }

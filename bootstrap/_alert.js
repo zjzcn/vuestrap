@@ -10,14 +10,14 @@ module.exports = {
             default: false,
             required: true
         },
-        type: {
-            type: String,
-            default: 'success'
-        },
         message: {
             type: String,
             default: '',
             required: true
+        },
+        type: {
+            type: String,
+            default: 'success'
         },
         dismissible: {
             type: Boolean,
@@ -29,7 +29,7 @@ module.exports = {
             // hide an alert
             this.show = false;
             // Dispatch an event from the current vm that propagates all the way up to its $root
-            this.$dispatch('alert', 'dismiss');
+            this.$dispatch('dismiss::alert');
         }
     }
 };
