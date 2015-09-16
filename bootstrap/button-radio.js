@@ -1,9 +1,10 @@
+require('./_buttons.scss');
 module.exports = {
-    template: require('./_button-radio.html'),
+    template: require('./button-radio.html'),
     replace: true,
     props: {
     	model: {
-    		// type: Object,
+    		type: String,
     		twoWay: true,
     		required: true
     	},
@@ -12,10 +13,5 @@ module.exports = {
           default: [],
           required: true
         }
-    }, 
-    methods: {
-    	select: function(item){
-    		this.model = item;
-    	}
     }
 };

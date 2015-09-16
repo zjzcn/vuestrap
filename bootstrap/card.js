@@ -3,14 +3,14 @@ require('./_buttons.scss');
 require('./_images.scss');
 require('./_list-group.scss');
 module.exports = {
-    template: require('./_card.html'),
+    template: require('./card.html'),
     replace: true,
     computed: {
     	cardVariant: function(){
-    		return !this.variant ? '' : 'card-' + this.variant;
+    		return !this.variant || this.variant === 'standard' ? '' : 'card-' + this.variant;
     	},
     	isInverse: function(){
-    		return this.type == 'image-overlay' || this.type =='inverse' || this.variant;
+    		return this.type == 'image-overlay' || this.type =='inverse' || this.variant && this.variant !== 'standard';
     	}
     },
     props: {

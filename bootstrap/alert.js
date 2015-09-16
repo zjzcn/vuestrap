@@ -1,7 +1,7 @@
 require('./_alert.scss');
 require('./_buttons.scss');
 module.exports = {
-    template: require('./_alert.html'),
+    template: require('./alert.html'),
     replace: true,
     props: {
         // required

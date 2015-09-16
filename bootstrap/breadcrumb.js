@@ -1,6 +1,6 @@
 require('./_breadcrumb.scss');
 module.exports = {
-    template: require('./_breadcrumb.html'),
+    template: require('./breadcrumb.html'),
     replace: true,
     props: {
         list: {

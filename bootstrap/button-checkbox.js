@@ -1,6 +1,6 @@
 require('./_buttons.scss');
 module.exports = {
-    template: require('./_button-checkbox.html'),
+    template: require('./button-checkbox.html'),
     replace: true,
     props: {
         list: {
@@ -9,10 +9,5 @@ module.exports = {
           default: [],
           required: true
         }
-    }, 
-    methods: {
-    	select: function(item){
-    		this.model = item;
-    	}
     }
 };
