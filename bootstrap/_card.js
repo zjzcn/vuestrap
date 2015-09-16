@@ -7,10 +7,10 @@ module.exports = {
     replace: true,
     computed: {
     	cardVariant: function(){
-    		return 'card-' + this.variant;
+    		return !this.variant ? '' : 'card-' + this.variant;
     	},
     	isInverse: function(){
-    		return this.type == 'image-overlay' || this.type =='inverse' || variant;
+    		return this.type == 'image-overlay' || this.type =='inverse' || this.variant;
     	}
     },
     props: {
@@ -42,7 +42,7 @@ module.exports = {
         	type: Array,
         	default: false
         },
-         // left | right | center
+        // left | right | center
         align: {
         	type: String,
             default: 'left'
@@ -51,7 +51,7 @@ module.exports = {
         	type: String,
         	default: false
         },
-         // image-overlay | inverse
+        // image-overlay | inverse
         type: {
         	type: String,
             default: false
