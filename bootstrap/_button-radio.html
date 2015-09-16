@@ -1,0 +1,5 @@
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary" v-class="active: model == value" v-repeat="list">
+    <input type="radio" name="options" value="{{value}}" autocomplete="off" v-model="model"> {{name}}
+  </label>
+</div>
