@@ -1,8 +1,16 @@
 require('./_forms.scss');
 var uniqueId = require('./make-id.js');
 module.exports = {
-    template: require('./_form-input.html'),
+    template: require('./form-input.html'),
     replace: true,
+    computed: {
+        inputState: function(){
+            return !this.state || this.state === 'standard' ? '' : 'has-' + this.state;
+        },
+        stateIconType: function(){
+            return !this.stateIcon || this.stateIcon === 'standard' ? '' : 'form-control-' + this.state;
+        }
+    },
     props: {
     	id: {
     		type: String,
@@ -10,7 +18,8 @@ module.exports = {
     	}, 
         model: {
             twoWay: true,
-            required: true
+            required: true, 
+            type: String
         },
     	label: {
     		type: String,
@@ -27,6 +36,15 @@ module.exports = {
     	description: {
     		type: String,
     		default: false
-    	}
+    	}, 
+        state: {
+            type: String,
+            default: ''
+        },
+        stateIcon: {
+            type: Boolean, 
+            default: true
+        }
+
     }
 };
