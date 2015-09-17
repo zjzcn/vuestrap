@@ -10,7 +10,7 @@ module.exports = {
     		return !this.variant || this.variant === 'standard' ? '' : 'card-' + this.variant;
     	},
     	isInverse: function(){
-    		return this.type == 'image-overlay' || this.type =='inverse' || this.variant && this.variant !== 'standard';
+    		return this.type == 'image-overlay' || this.variant =='inverse' || this.variant && this.variant !== 'standard';
     	}
     },
     props: {
