@@ -1,0 +1,18 @@
+<div class="dropdown" v-class="open: show">
+    <button 
+        id="dLabel"
+        class="btn {{btnVariant}} dropdown" 
+        role="button" 
+        aria-haspopup="true" 
+        aria-expanded="show" 
+        v-on="click: show = !show"
+        v-class="'dropdown-toggle': caret">
+        <app-icon icon="{{icon}}" v-show="icon"></app-icon>
+        <span v-show="model">{{model.name}}</span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dLabel">
+        <li v-repeat="item in list">
+            <button class="dropdown-item" v-on="click: select(item)">{{item.name}}</button>
+        </li>
+    </ul>
+</div>
