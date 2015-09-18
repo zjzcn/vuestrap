@@ -1,8 +1,13 @@
-require('./_breadcrumb.scss');
+require('./_buttons.scss');
 module.exports = {
-    template: require('./_breadcrumb.html'),
+    template: require('./button-radio.html'),
     replace: true,
     props: {
+    	model: {
+    		type: String,
+    		twoWay: true,
+    		required: true
+    	},
         list: {
           type: Array, 
           default: [],

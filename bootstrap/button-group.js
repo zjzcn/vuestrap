@@ -1,7 +1,7 @@
 require('./_button-group.scss');
 require('./_buttons.scss');
 module.exports = {
-    template: require('./_button-group.html'),
+    template: require('./button-group.html'),
     replace: true,
     props: {
         vertical: {

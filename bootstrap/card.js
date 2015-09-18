@@ -3,14 +3,14 @@ require('./_buttons.scss');
 require('./_images.scss');
 require('./_list-group.scss');
 module.exports = {
-    template: require('./_card.html'),
+    template: require('./card.html'),
     replace: true,
     computed: {
     	cardVariant: function(){
-    		return 'card-' + this.variant;
+    		return !this.variant || this.variant === 'standard' ? '' : 'card-' + this.variant;
     	},
     	isInverse: function(){
-    		return this.type == 'image-overlay' || this.type =='inverse' || variant;
+    		return this.type == 'image-overlay' || this.variant =='inverse' || this.variant && this.variant !== 'standard';
     	}
     },
     props: {
@@ -42,7 +42,7 @@ module.exports = {
         	type: Array,
         	default: false
         },
-         // left | right | center
+        // left | right | center
         align: {
         	type: String,
             default: 'left'
@@ -51,7 +51,7 @@ module.exports = {
         	type: String,
         	default: false
         },
-         // image-overlay | inverse
+        // image-overlay | inverse
         type: {
         	type: String,
             default: false
