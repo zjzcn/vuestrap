@@ -1,18 +1,17 @@
 require('./_forms.scss');
 var uniqueId = require('./make-id.js');
 module.exports = {
-    template: require('./_form-select.html'),
+    template: require('./form-select.html'),
     replace: true,
     computed: {
-        'allOptions': function(){
-            return this.options;//.unshift(this.defaultOption);
-        }
+        allOptions: function(){
+            return [this.defaultOption].concat(this.options);
+        },
+        inputState: function(){
+            return !this.state || this.state === 'standard' ? '' : 'has-' + this.state;
+        },
     },
     props: {
-    	id: {
-    		type: String,
-    		default: uniqueId
-    	}, 
     	model: {
     		twoWay: true,
     		required: true
@@ -21,13 +20,13 @@ module.exports = {
     		type: Array,
     		required: true,
     	},
+        id: {
+            type: String,
+            default: uniqueId
+        }, 
     	label: {
     		type: String,
     		default: false
-    	},
-    	type: {
-    		type: String,
-    		default: 'text'
     	},
     	defaultOption: {
     		type: Object,
@@ -36,6 +35,10 @@ module.exports = {
     	description: {
     		type: String,
     		default: false
-    	}
+    	},
+        state: {
+            type: String,
+            default: ''
+        },
     }
 };
