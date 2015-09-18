@@ -30,7 +30,7 @@ module.exports = {
             default: ''
         },
         rows: {
-        	type: String,
+        	type: Number,
         	default: 3
         }
     }
