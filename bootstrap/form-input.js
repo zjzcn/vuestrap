@@ -17,15 +17,15 @@ module.exports = {
             required: true, 
             type: String
         },
-        id: {
-            type: String,
-            default: uniqueId
-        }, 
         type: {
             type: String,
             default: 'text', 
             required: true
         },
+        id: {
+            type: String,
+            default: uniqueId
+        }, 
     	label: {
     		type: String,
     		default: ''
