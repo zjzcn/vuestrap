@@ -7,10 +7,11 @@ module.exports = {
     replace: true,
     computed: {
     	cardVariant: function(){
-    		return !this.variant || this.variant === 'standard' ? '' : 'card-' + this.variant;
+            var custom = this.variant === 'inverse' ?  ' card-custom' : ''; // add custom background for inverse option 
+    		return !this.variant || this.variant === 'standard' ? '' : 'card-' + this.variant + custom;
     	},
     	isInverse: function(){
-    		return this.type == 'image-overlay' || this.variant =='inverse' || this.variant && this.variant !== 'standard';
+    		return this.type == 'image-overlay';
     	}
     },
     props: {

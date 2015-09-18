@@ -3,7 +3,7 @@
     <img class="card-img-top img-responsive" v-attr="src: image.src" alt="{{image.alt}}" v-if="image && image.position =='top'">
     <div class="card-block" v-class="'card-img-overlay': type == 'image-overlay'">
         <h4 class="card-title" v-if="title">{{title}}</h4>
-        <p class="card-text" v-if="text">text</p>
+        <p class="card-text" v-if="text">{{text}}</p>
         <content></content>
         <a href="{{href}}" class="btn btn-{{type}}" v-repeat="buttons" v-show="buttons">{{name}}</a>
     </div>
