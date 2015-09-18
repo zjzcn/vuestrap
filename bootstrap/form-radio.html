@@ -1,0 +1,8 @@
+<fieldset class="form-group {{inputState}}">
+	<div class="radio" v-repeat="list" v-class="'radio-inline': !vertical, disabled: disabled">
+		<label>
+			<input id="{{id}}" type="radio" name="options" value="{{value}}" autocomplete="off" v-model="model" disabled="{{disabled}}"> 
+		 	{{name}} {{vertical}}
+		</label>
+	</div>
+</fieldset>
