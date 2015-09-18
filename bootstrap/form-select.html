@@ -1,5 +1,5 @@
 <fieldset class="form-group {{inputState}}">
     <label for="{{id}}" v-if="label">{{label}}</label>
-    <select class="form-control" id="{{id}}" v-model="model" options="allOptions"></select>
+    <select class="form-control" id="{{id}}" v-model="model" options="allOptions" multiple="multiple"></select>
     <small class="text-muted" v-if="description" v-html="description"></small>
 </fieldset>
