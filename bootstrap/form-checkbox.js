@@ -2,6 +2,11 @@ require('./_forms.scss');
 module.exports = {
     template: require('./form-checkbox.html'),
     replace: true,
+    computed: {
+        inputState: function(){
+            return !this.state || this.state === 'standard' ? '' : 'has-' + this.state;
+        }
+    },
     props: {
         list: {
           type: Array, 
