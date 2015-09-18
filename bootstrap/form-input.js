@@ -12,22 +12,23 @@ module.exports = {
         }
     },
     props: {
-    	id: {
-    		type: String,
-    		default: uniqueId
-    	}, 
         model: {
             twoWay: true,
             required: true, 
             type: String
         },
+        id: {
+            type: String,
+            default: uniqueId
+        }, 
+        type: {
+            type: String,
+            default: 'text', 
+            required: true
+        },
     	label: {
     		type: String,
-    		default: false
-    	},
-    	type: {
-    		type: String,
-    		default: 'text'
+    		default: ''
     	},
     	placeholder: {
     		type: String,
@@ -35,7 +36,7 @@ module.exports = {
     	},
     	description: {
     		type: String,
-    		default: false
+    		default: ''
     	}, 
         state: {
             type: String,
