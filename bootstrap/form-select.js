@@ -44,5 +44,12 @@ module.exports = {
             type: Boolean,
             default: false
         }
+    },
+    watch: {
+        'model': function(val, oldVal){
+            if (val === oldVal) return;
+            // Dispatch an event from the current vm that propagates all the way up to its $root
+            this.$dispatch('select::option', val);
+        }
     }
 };
