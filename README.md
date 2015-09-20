@@ -2,6 +2,10 @@ VueStrap
 ========
 Extend Bootstrap 4 with extra "plug and play" components and simplify your web development.
 
+Website
+========
+http://vuestrap.com
+
 The idea
 --------
 - cherry pick components from library
@@ -15,5 +19,5 @@ Updated Boostrap structure in VueStrap:
 - _variables.scss and _mixins.scss are now part of one file theme/bootstrap.scss
 - core/ folder includes SVG icons 
 - mixins are in the root folder to be easily imported in the theme/bootstrap.scss and/or application itself
-- added extra folder for community components that meet VueStrap guidelines http://vuestrap.gitbooks.io/docs/content/guide.html
+- added extra folder for community components that meet VueStrap guidelines http://docs.vuestrap.com/docs/content/guide.html
 - components/ folder contains the same components from Bootstrap 4 with additional html tamplates and javascript files
