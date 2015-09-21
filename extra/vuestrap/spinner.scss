@@ -27,9 +27,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 }
 @mixin spinner-variant($circle-color, $circle-bg: $circle-bg){
     .text-center {
-        p {
-            color: $circle-color;
-        }
+        color: $circle-color;
     }
     .spinner {
         @include spinner-variant-inline($circle-color, $circle-bg);
@@ -92,11 +90,15 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
     height: 100%;
     width: 100%;
     z-index: 9998;
-    position: fixed;
+    position: absolute;
     top: 0; 
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    &.spinner-fixed {
+        position: fixed;
+    }
     .overlay{
         position: absolute;
         top: 0;
@@ -113,10 +115,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
     .text-center {
         z-index: 9999;
         text-align: center;
-
-        p {
-            color: $spinner-color;
-        }
+        color: $spinner-color;
     }
 }
 
