@@ -21,6 +21,14 @@ module.exports = {
 	    id: {
 	    	type: String,
 	    	defult: ''
+	    },
+	    size: {
+	    	type: String,
+	    	default: 'md'
+	    },
+	    fade: {
+	    	type: Boolean,
+	    	default: true
 	    }
 	},
 	methods: {
@@ -29,14 +37,25 @@ module.exports = {
 			// wait for the display block, and then add class "in" class on the modal
 			setTimeout(function(){
 				this.animate = true;
+				this.$dispatch('show::modal');
 			}.bind(this),0);
 		},
 		hideModal: function(){
 			this.animate = false;
+			var self= this;
+			function close() {
+				self.$el.style.display = 'none';
+				self.$dispatch('hide::modal');
+			}
+
 			// hide modal block after animation is completed
-			setTimeout(function(){
-				this.$el.style.display = 'none';
-			}.bind(this), TRANSITION_DURATION);
+			if (this.fade) {
+				setTimeout(function(){
+					close();
+				}, TRANSITION_DURATION);
+			} else {
+				close();
+			}
 		}
 	},
 	watch: {
@@ -47,5 +66,14 @@ module.exports = {
 				this.hideModal();
 			}
 		}
+	}, 
+	ready: function(){
+		document.addEventListener('keydown', function (e) {
+		    var key = e.which || e.keyCode;
+		    if (key === 27) { // 27 is esc
+		    	this.show = false;
+		    	this.hideModal();
+		    }
+		}.bind(this));
 	}
 };
