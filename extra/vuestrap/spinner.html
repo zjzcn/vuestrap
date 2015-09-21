@@ -1,8 +1,8 @@
-<div id="{{id}}" class="spinner-wrapper spinner-{{variant}}" v-show="active" v-if="overlay">
+<div id="{{id}}" class="spinner-wrapper spinner-{{variant}}" v-class="'spinner-fixed': fixed" v-show="active" v-if="overlay">
 	<div class="overlay"></div>
 	<div class="text-center">
 		<div class="spinner spinner-{{size}} "></div>
-		<p><content></content></p>
+		<content></content>
 	</div>
 </div>
 <div id="{{id}}" class="spinner spinner-{{size}} spinner-{{variant}}" v-show="active" v-if="!overlay"></div>

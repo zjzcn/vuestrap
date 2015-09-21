@@ -8,7 +8,7 @@ module.exports = {
             size: 'md'
     	};
     },
-    props: ['id','size','variant','overlay'],
+    props: ['id','size','variant','overlay','fixed'],
     methods: {
     	show: function(){
     		this.active = true;
