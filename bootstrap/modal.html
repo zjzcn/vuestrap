@@ -1,0 +1,10 @@
+<div id="{{id}}" class="modal fade" v-class="in: animate">
+  	<div class="modal-dialog" role="document" style="z-index: 9999">
+	    <div class="modal-content">
+	        <content select=".modal-header"></content>
+	        <content select=".modal-body"></content>
+	        <content select=".modal-footer"></content>
+	    </div>
+	</div>
+	<div class="modal-backdrop fade" v-class="in: animate" v-on="click: show = false"></div>
+</div>
