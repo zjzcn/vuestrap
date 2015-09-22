@@ -1,4 +1,4 @@
-<div id="{{id}}" class="modal" v-class="fade: fade, in: animate">
+<div id="{{id}}" class="modal" v-class="fade: fade, in: animate || !fade">
   	<div class="modal-dialog  modal-{{size}}" role="document" style="z-index: 9999">
 	    <div class="modal-content">
 	        <content select=".modal-header"></content>
@@ -6,5 +6,5 @@
 	        <content select=".modal-footer"></content>
 	    </div>
 	</div>
-	<div class="modal-backdrop" v-class="fade: fade, in: animate" v-on="click: show = false"></div>
+	<div class="modal-backdrop" v-class="fade: fade, in: animate || !fade" v-on="click: show = false"></div>
 </div>

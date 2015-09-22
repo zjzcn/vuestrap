@@ -38,24 +38,16 @@ module.exports = {
 			setTimeout(function(){
 				this.animate = true;
 				this.$dispatch('show::modal');
-			}.bind(this),0);
+			}.bind(this), 0);
 		},
 		hideModal: function(){
-			this.animate = false;
 			var self= this;
-			function close() {
+			this.animate = false;
+			// wait for animation to complete and then hide the modal
+			setTimeout(function(){
 				self.$el.style.display = 'none';
 				self.$dispatch('hide::modal');
-			}
-
-			// hide modal block after animation is completed
-			if (this.fade) {
-				setTimeout(function(){
-					close();
-				}, TRANSITION_DURATION);
-			} else {
-				close();
-			}
+			}, TRANSITION_DURATION);
 		}
 	},
 	watch: {
