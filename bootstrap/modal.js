@@ -47,7 +47,7 @@ module.exports = {
 			setTimeout(function(){
 				self.$el.style.display = 'none';
 				self.$dispatch('hide::modal');
-			}, TRANSITION_DURATION);
+			}, (this.fade) ? TRANSITION_DURATION : 0);
 		}
 	},
 	watch: {
