@@ -8,16 +8,11 @@ module.exports = {
     replace: true, 
     data: function(){
     	return {
-    		animate: false
+    		animateBackdrop: false,
+    		animateModal: false
     	};
     },
  	props: {
-	    show: {
-			type: Boolean,
-			required: true,
-			twoWay: true,
-			default: false    
-	    },
 	    id: {
 	    	type: String,
 	    	defult: ''
@@ -32,40 +27,58 @@ module.exports = {
 	    }
 	},
 	methods: {
-		showModal: function(){
+		show: function(){
 			this.$el.style.display = 'block';
 			// wait for the display block, and then add class "in" class on the modal
 			setTimeout(function(){
-				this.animate = true;
-				this.$dispatch('show::modal');
-			}.bind(this), 0);
+				this.animateBackdrop = true;
+				setTimeout(function(){
+					this.animateModal = true;
+					this.$dispatch('show::modal');
+				}.bind(this), (this.fade) ? TRANSITION_DURATION/2 : 0);
+			}.bind(this),0);
 		},
-		hideModal: function(){
+		hide: function(){
 			var self= this;
-			this.animate = false;
-			// wait for animation to complete and then hide the modal
+			// first animate modal out
+			this.animateModal = false;
 			setTimeout(function(){
-				self.$el.style.display = 'none';
-				self.$dispatch('hide::modal');
-			}, (this.fade) ? TRANSITION_DURATION : 0);
-		}
-	},
-	watch: {
-		'show': function(val){
-			if (val) {
-				this.showModal();
-			} else {				
-				this.hideModal();
+				// wait for animation to complete and then hide the backdrop
+				this.animateBackdrop = false;
+				setTimeout(function(){
+					// no hide the modal wrapper
+					self.$el.style.display = 'none';
+					self.$dispatch('hide::modal');
+				}.bind(this), (this.fade) ? TRANSITION_DURATION/2 : 0);
+			}.bind(this), (this.fade) ? TRANSITION_DURATION/2 : 0);
+		},
+		onClickOut: function(e){
+			// if backdrop clicked, hide modal
+			if (e.target.id && e.target.id === this.id) {
+				this.hide();
 			}
 		}
-	}, 
+	},
 	ready: function(){
+		// support for esc key press
 		document.addEventListener('keydown', function (e) {
 		    var key = e.which || e.keyCode;
 		    if (key === 27) { // 27 is esc
-		    	this.show = false;
-		    	this.hideModal();
+		    	this.hide();
 		    }
 		}.bind(this));
-	}
+	},
+	events: {
+		// control modal from outside via events
+        'show-modal': function(id){
+            if (id === this.id){
+                this.show();
+            }
+        },
+        'hide-modal': function(id){
+            if (id === this.id){
+                this.hide();
+            }
+        }
+    }
 };
