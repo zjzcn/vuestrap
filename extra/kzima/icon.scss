@@ -1,0 +1,75 @@
+@mixin icon-variant ($color) {
+    svg.icon {
+        fill: $color;
+    }
+}
+
+// global default
+svg.icon {
+	@include square($font-size-base);
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -4px;
+	&.icon-right {
+		margin-left: 5px;
+		margin-right: 0;
+	}
+	&.icon-left {
+		margin-left: 0;
+		margin-right: 5px;
+	}
+}
+
+// svg icon sizes
+svg.icon {
+	&.icon-sm {
+	    @include square($icon-size-sm);
+	}
+
+	&.icon-md {
+	    @include square($icon-size-md);
+	}
+
+	&.icon-lg {
+	    @include square($icon-size-lg);
+	}
+
+	&.icon-xl {
+	    @include square($icon-size-xl);
+	}
+
+	&.icon-xxl {
+	    @include square($icon-size-xxl);
+	}
+}
+
+// svg icon fill variants
+svg.icon {
+	&.icon-primary {
+	    fill: $icon-fill-primary;
+	}
+
+	&.icon-info {
+	    fill: $icon-fill-info;
+	}
+
+	&.icon-success {
+	    fill: $icon-fill-success;
+	}
+
+	&.icon-warning {
+	    fill: $icon-fill-warning;
+	}
+
+	&.icon-danger {
+	    fill: $icon-fill-danger;
+	}
+
+	&.icon-dark {
+	    fill: $icon-fill-dark;
+	}
+
+	&.icon-light {
+	    fill: $icon-fill-light;
+	}
+}

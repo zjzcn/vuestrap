@@ -12,6 +12,7 @@ The idea
 - cleaner code thanks to custom tags
 - any component within application has consistent look and feel 
 - easy to theme
+- support for SVG icons from Open Iconic — www.useiconic.com/open
 
 Updated Boostrap structure in VueStrap:
 --------

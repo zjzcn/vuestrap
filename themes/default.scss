@@ -625,3 +625,5 @@ $pre-scrollable-max-height:   340px !default;
 
 // get global stuff
 @import "../mixins/_mixins";
+// get extra component variables
+@import "../extra/variables";
