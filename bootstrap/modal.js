@@ -35,7 +35,7 @@ module.exports = {
 				setTimeout(function(){
 					this.animateModal = true;
 					this.$dispatch('show::modal');
-				}.bind(this), (this.fade) ? TRANSITION_DURATION/2 : 0);
+				}.bind(this), (this.fade) ? TRANSITION_DURATION : 0);
 			}.bind(this),0);
 		},
 		hide: function(){
@@ -49,8 +49,8 @@ module.exports = {
 					// no hide the modal wrapper
 					self.$el.style.display = 'none';
 					self.$dispatch('hide::modal');
-				}.bind(this), (this.fade) ? TRANSITION_DURATION/2 : 0);
-			}.bind(this), (this.fade) ? TRANSITION_DURATION/2 : 0);
+				}.bind(this), (this.fade) ? TRANSITION_DURATION : 0);
+			}.bind(this), (this.fade) ? TRANSITION_DURATION : 0);
 		},
 		onClickOut: function(e){
 			// if backdrop clicked, hide modal
