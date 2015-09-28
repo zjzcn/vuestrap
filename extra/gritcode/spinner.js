@@ -1,4 +1,4 @@
-require('./spinner.scss');
+require('./_spinner.scss');
 module.exports = {
     template: require('./spinner.html'),
     replace: true, 

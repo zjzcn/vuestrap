@@ -1,4 +1,4 @@
-require('./icon.scss');
+require('./_icon.scss');
 module.exports = {
     template: require('./icon.html'),
     replace: true,
