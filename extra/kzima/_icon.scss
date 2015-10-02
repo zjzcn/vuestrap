@@ -23,53 +23,53 @@ svg.icon {
 // svg icon sizes
 svg.icon {
 	&.icon-sm {
-	    @include square($icon-size-sm);
+	    @include square($kzima-icon-size-sm);
 	}
 
 	&.icon-md {
-	    @include square($icon-size-md);
+	    @include square($kzima-icon-size-md);
 	}
 
 	&.icon-lg {
-	    @include square($icon-size-lg);
+	    @include square($kzima-icon-size-lg);
 	}
 
 	&.icon-xl {
-	    @include square($icon-size-xl);
+	    @include square($kzima-icon-size-xl);
 	}
 
 	&.icon-xxl {
-	    @include square($icon-size-xxl);
+	    @include square($kzima-icon-size-xxl);
 	}
 }
 
 // svg icon fill variants
 svg.icon {
 	&.icon-primary {
-	    fill: $icon-fill-primary;
+	    fill: $kzima-icon-fill-primary;
 	}
 
 	&.icon-info {
-	    fill: $icon-fill-info;
+	    fill: $kzima-icon-fill-info;
 	}
 
 	&.icon-success {
-	    fill: $icon-fill-success;
+	    fill: $kzima-icon-fill-success;
 	}
 
 	&.icon-warning {
-	    fill: $icon-fill-warning;
+	    fill: $kzima-icon-fill-warning;
 	}
 
 	&.icon-danger {
-	    fill: $icon-fill-danger;
+	    fill: $kzima-icon-fill-danger;
 	}
 
 	&.icon-dark {
-	    fill: $icon-fill-dark;
+	    fill: $kzima-icon-fill-dark;
 	}
 
 	&.icon-light {
-	    fill: $icon-fill-light;
+	    fill: $kzima-icon-fill-light;
 	}
 }
