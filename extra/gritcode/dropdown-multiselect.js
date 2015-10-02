@@ -14,6 +14,9 @@ module.exports = {
         btnVariant: function(){
             return !this.variant || this.variant === 'standard' ? '' : 'btn-' + this.variant;
         },
+        btnSize: function(){
+            return !this.size || this.size === 'standard' ? '' : 'btn-' + this.size;
+        },
         display: function(){
             var checkedItems = [];
             this.list.forEach(function(item){
@@ -28,7 +31,7 @@ module.exports = {
             }
             // if more than limit show "X items selected"
             if (checkedItems.length > this.maxCount) {
-                return checkedItems.length + ' items selected';
+                return checkedItems.length + ' ' + this.defaultOptionMultiple;
             // otherwise show all items selected with coma seperated
             } else {
                 return checkedItems.join(', ');
@@ -53,9 +56,17 @@ module.exports = {
             type: String,
             default: ''
         },
+        size: {
+            type: String,
+            default: ''
+        },
         defaultOption: {
             type: String,
             default: 'Nothing selected'
+        },
+        defaultOptionMultiple: {
+            type: String,
+            default: 'items selected'
         },
         maxCount: {
             type: Number,

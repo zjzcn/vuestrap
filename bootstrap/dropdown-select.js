@@ -10,6 +10,9 @@ module.exports = {
     computed: {
         btnVariant: function(){
             return !this.variant || this.variant === 'standard' ? '' : 'btn-' + this.variant;
+        },
+        btnSize: function(){
+            return !this.size || this.size === 'standard' ? '' : 'btn-' + this.size;
         }
     },
     props: {
@@ -32,6 +35,10 @@ module.exports = {
             default: true
         },
         variant: {
+            type: String,
+            default: ''
+        },
+        size: {
             type: String,
             default: ''
         }
