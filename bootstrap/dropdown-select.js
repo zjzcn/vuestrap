@@ -41,6 +41,10 @@ module.exports = {
         size: {
             type: String,
             default: ''
+        },
+        defaultOption: {
+            type: String,
+            default: ''
         }
     },
     methods: {
@@ -48,7 +52,7 @@ module.exports = {
             this.model = item;
             this.show = false;
             // Dispatch an event from the current vm that propagates all the way up to its $root
-            this.$dispatch('hide::dropdown');
+            this.$dispatch('hide::dropdown', item);
         }
     }
 };

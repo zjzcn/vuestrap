@@ -8,7 +8,8 @@
         v-on="click: show = !show"
         v-class="'dropdown-toggle': caret">
         <app-icon icon="{{icon}}" v-show="icon"></app-icon>
-        <span v-show="model">{{model.name}}</span>
+        <span v-if="model && !defaultOption">{{model.name}}</span>
+        <span v-if="defaultOption">{{defaultOption}}</span>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dLabel">
         <li v-repeat="item in list">
