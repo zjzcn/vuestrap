@@ -36,7 +36,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Standard Size
 // --------------------------------------------------
-.spinner {
+.gritcode-spinner {
     text-align: center;
     position: relative;
     margin: auto;
@@ -66,7 +66,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Shapes
 // --------------------------------------------------
-.spinner {
+.gritcode-spinner {
     &.spinner-sm {
         width: 1.2857em;
         height: 1.2857em;
@@ -86,7 +86,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 }
 
 // spinner wrapper with overlay
-.spinner-wrapper {
+.gritcode-spinner-wrapper {
     height: 100%;
     width: 100%;
     z-index: 9998;
@@ -121,7 +121,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Variants for main application spinner
 // --------------------------------------------------
-.spinner-wrapper {
+.sgritcode-pinner-wrapper {
     &.spinner-inverted {
         @include spinner-variant(#fff, $spinner-color);
         .overlay {
@@ -147,7 +147,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Variants for inline spinner
 // --------------------------------------------------
-.spinner {
+.gritcode-spinner {
     &.spinner-primary {
         @include spinner-variant-inline($brand-primary);
     }
@@ -167,7 +167,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // States
 // --------------------------------------------------        
-.spinner-wrapper {
+.gritcode-spinner-wrapper {
     &.disabled { 
         display: none;
     }

@@ -1,11 +1,11 @@
 @mixin icon-variant ($color) {
-    svg.icon {
+    .kzima-icon {
         fill: $color;
     }
 }
 
 // global default
-svg.icon {
+.kzima-icon {
 	@include square($font-size-base);
 	display: inline-block;
 	vertical-align: middle;
@@ -21,7 +21,7 @@ svg.icon {
 }
 
 // svg icon sizes
-svg.icon {
+.kzima-icon {
 	&.icon-sm {
 	    @include square($kzima-icon-size-sm);
 	}
@@ -44,7 +44,7 @@ svg.icon {
 }
 
 // svg icon fill variants
-svg.icon {
+.kzima-icon {
 	&.icon-primary {
 	    fill: $kzima-icon-fill-primary;
 	}

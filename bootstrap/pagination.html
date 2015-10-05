@@ -1,4 +1,4 @@
-<div class="btn-group" role="group" aria-label="Pagination">
+<div class="btn-group pagination" role="group" aria-label="Pagination">
     <button type="button" class="btn {{btnSize}} btn-secondary" v-class="disabled: currentPage == 1" v-on="click: (currentPage == 1) ? return : currentPage--"><span aria-hidden="true">&laquo;</span></button>
     <button type="button" class="btn {{btnSize}} btn-secondary" v-class="active: currentPage == 1" v-on="click: currentPage = 1" v-show="showPrev">1</button>
     <span class="btn {{btnSize}} btn-secondary" v-show="showPrev">...</span>
