@@ -121,7 +121,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Variants for main application spinner
 // --------------------------------------------------
-.sgritcode-pinner-wrapper {
+.gritcode-spinner-wrapper {
     &.spinner-inverted {
         @include spinner-variant(#fff, $spinner-color);
         .overlay {
