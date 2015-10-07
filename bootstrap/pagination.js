@@ -56,6 +56,12 @@ module.exports = {
             return result;
         },
     },
+    methods: {
+        btnVariant: function(index) {
+            console.log(index + this.diff == this.currentPage);
+            return (index + this.diff == this.currentPage) ? 'btn-' + this.variant : 'btn-secondary';
+        },
+    },
     props: {
         totalRows: {
             type: Number,
@@ -74,6 +80,10 @@ module.exports = {
             default: 7
         },
         size: {
+            type: String,
+            default: 'secondary'
+        },
+        variant: {
             type: String,
             default: ''
         },

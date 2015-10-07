@@ -16,6 +16,10 @@ module.exports = {
             type: String,
             default: 'primary'
         },
+        text: {
+            type: Object,
+            default: ''
+        },
         // if false spinner will be inline
         overlay: {
             type: Boolean,

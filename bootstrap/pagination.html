@@ -3,7 +3,7 @@
     <button type="button" class="btn {{btnSize}} btn-secondary" v-class="active: currentPage == 1" v-on="click: currentPage = 1" v-show="showPrev">1</button>
     <span class="btn {{btnSize}} btn-secondary" v-show="showPrev">...</span>
     <button type="button" 
-    	class="btn {{btnSize}} btn-secondary" 
+    	class="btn {{btnSize}} {{btnVariant($index)}}" 
     	v-repeat="pageLinks" 
         v-class="active: $index + diff == currentPage" 
         v-on="click: currentPage = $index + diff">{{$index + diff}}
