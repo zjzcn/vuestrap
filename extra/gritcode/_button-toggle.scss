@@ -1,7 +1,6 @@
 .gritcode-button-toggle {
     position: relative;
     overflow: hidden;
-    padding: 0;
     border: 0;
     .btn {
         margin: 0;
@@ -9,17 +8,17 @@
         outline: none;
         transition: transform .35s;
         transform: translate(-100%);
-        &:active,&:hover,&:visited {
+        &:active,&:hover,&:visited,&:focus {
             outline: none;
         }
-        
+
     }
     &.active {
         .btn {
             transform: translate(0%);
         }
         .handle {
-            left: calc(100% - 12px);    
+            left: calc(100% - 12px);
         }
     }
     .handle {
@@ -28,7 +27,7 @@
         background-color: #fff;
         position: absolute;
         margin: 1px;
-        height: calc(100% - 2px);    
+        height: calc(100% - 2px);
         padding: 0;
         width: 10px;
         left: 0%;
