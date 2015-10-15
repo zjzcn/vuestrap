@@ -58,7 +58,6 @@ module.exports = {
     },
     methods: {
         btnVariant: function(index) {
-            console.log(index + this.diff == this.currentPage);
             return (index + this.diff == this.currentPage) ? 'btn-' + this.variant : 'btn-secondary';
         },
     },
