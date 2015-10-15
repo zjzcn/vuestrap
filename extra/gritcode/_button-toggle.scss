@@ -9,10 +9,9 @@
         outline: none;
         transition: transform .35s;
         transform: translate(-100%);
-        &:active,&:hover,&:visited {
+        &:active,&:hover,&:visited,&:focus {
             outline: none;
         }
-
     }
     &.active {
         .btn {

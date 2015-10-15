@@ -1,5 +1,5 @@
 <div class="button-toggle gritcode-button-toggle btn btn-{{size}} btn-default" v-class="active: model">
     <button class="btn btn-block btn-{{variant}} btn-{{size}}" v-on="click: model = false">{{text.on}}</button><!--
-    --><span class="handle"></span><!--
+    --><span class="handle" v-on="click: model = !model"></span><!--
     --><button class="btn btn-block btn-default btn-{{size}}" v-on="click: model = true">{{text.off}}</button>
 </div>
