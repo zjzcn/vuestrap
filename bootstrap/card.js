@@ -7,8 +7,8 @@ module.exports = {
     replace: true,
     computed: {
     	cardVariant: function(){
-            var custom = this.variant === 'inverse' ?  ' card-custom' : ''; // add custom background for inverse option 
-    		return !this.variant || this.variant === 'standard' ? '' : 'card-' + this.variant + custom;
+            var custom = this.variant === 'inverse' ?  ' card-custom' : ''; // add custom background for inverse option
+    		return !this.variant || this.variant === 'default' ? '' : 'card-' + this.variant + custom;
     	},
     	isInverse: function(){
     		return this.type == 'image-overlay';
@@ -57,10 +57,10 @@ module.exports = {
         	type: String,
             default: false
         },
-        // primary | success | info | warning | danger 
+        // default | primary | success | info | warning | danger
         variant: {
         	type: String,
-            default: false
+            default: 'default'
         }
     }
 };

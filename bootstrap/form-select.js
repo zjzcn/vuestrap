@@ -8,8 +8,11 @@ module.exports = {
             return [this.defaultOption].concat(this.options);
         },
         inputState: function(){
-            return !this.state || this.state === 'standard' ? '' : 'has-' + this.state;
+            return !this.state || this.state === 'default' ? '' : 'has-' + this.state;
         },
+        inputSize: function(){
+    		return !this.size || this.size === 'default' ? '' : 'form-control-' + this.size;
+    	}
     },
     props: {
     	model: {
@@ -23,7 +26,7 @@ module.exports = {
         id: {
             type: String,
             default: uniqueId
-        }, 
+        },
     	label: {
     		type: String,
     		default: false
@@ -37,6 +40,10 @@ module.exports = {
     		default: false
     	},
         state: {
+            type: String,
+            default: ''
+        },
+        size: {
             type: String,
             default: ''
         },

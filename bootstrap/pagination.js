@@ -16,7 +16,7 @@ module.exports = {
             return (result < 1) ? 1 : result;
         },
         btnSize: function() {
-            return !this.size || this.size === 'standard' ? '' : 'btn-' + this.size;
+            return !this.size || this.size === 'default' ? '' : 'btn-' + this.size;
         },
         pageLinks: function() {
             var result = this.limit;

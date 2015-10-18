@@ -5,27 +5,30 @@ module.exports = {
     replace: true,
     computed: {
         inputState: function(){
-            return !this.state || this.state === 'standard' ? '' : 'has-' + this.state;
+            return !this.state || this.state === 'default' ? '' : 'has-' + this.state;
         },
         stateIconType: function(){
-            return !this.stateIcon || this.stateIcon === 'standard' ? '' : 'form-control-' + this.state;
-        }
+            return !this.stateIcon || this.stateIcon === 'default' ? '' : 'form-control-' + this.state;
+        },
+        inputSize: function(){
+    		return !this.size || this.size === 'default' ? '' : 'form-control-' + this.size;
+    	}
     },
     props: {
         model: {
             twoWay: true,
-            required: true, 
+            required: true,
             type: String
         },
         type: {
             type: String,
-            default: 'text', 
+            default: 'text',
             required: true
         },
         id: {
             type: String,
             default: uniqueId
-        }, 
+        },
     	label: {
     		type: String,
     		default: ''
@@ -37,13 +40,17 @@ module.exports = {
     	description: {
     		type: String,
     		default: ''
-    	}, 
+    	},
+        size: {
+            type: String,
+            default: ''
+        },
         state: {
             type: String,
             default: ''
         },
         stateIcon: {
-            type: Boolean, 
+            type: Boolean,
             default: true
         }
 

@@ -3,6 +3,11 @@ require('./_buttons.scss');
 module.exports = {
     template: require('./alert.html'),
     replace: true,
+    computed: {
+    	alertState: function(){
+    		return !this.state || this.state === 'default' ? 'alert-success' : 'alert-' + this.state;
+    	}
+    },
     props: {
         // required
         show: {
@@ -15,7 +20,7 @@ module.exports = {
             default: '',
             required: true
         },
-        type: {
+        state: {
             type: String,
             default: 'success'
         },

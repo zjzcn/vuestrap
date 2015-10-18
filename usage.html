@@ -1,0 +1,188 @@
+<alert
+  show="{{@alert.show}}"
+    type="{{alert.type}}"
+    message="<strong>Note</strong> This is an html message"
+    dismissible="{{alert.dismissible}}">
+</alert>
+
+<breadcrumb
+    list="{{ [{name: 'Home', href: '#'}, {name: 'Library', active: true}] | json }}">
+</breadcrumb>
+
+<button-group vertical="{{@ buttonGroup.vertical }}">
+    <button type="button" class="btn btn-secondary">Left</button>
+    <button type="button" class="btn btn-secondary">Middle</button>
+    <button type="button" class="btn btn-secondary">Right</button>
+</button-group>
+
+<button-checkbox
+    size="{{ buttonCheckbox.size }}"
+    list="{{@ buttonCheckbox.list | json }}"
+    variant="{{ buttonCheckbox.variant }}">
+</button-checkbox>
+
+<button-radio
+    size="{{ buttonRadio.size }}"
+    list="{{ buttonRadio.list | json }}"
+    model="{{@ buttonRadio.model }}"
+    variant="{{ buttonRadio.variant }}">
+</button-radio>
+
+<button-toggle
+    size="{{ buttonToggle.size }}"
+    text="{{ { on: "On",  off: "Off"} }}"
+    model="{{@ buttonToggle.model }}"
+    variant="{{ buttonToggle.variant }}">
+</button-toggle>
+
+<card
+    header="Featured"
+    image="{{ {src: 'https://placehold.it/350x150', alt: 'some description', position: 'top'} | json }}"
+    title="Card title"
+    text="Some quick example text to build on the card title and make up the bulk of the card's content."
+    buttons="{{ [{name: 'button', href: '#', type:'primary'}] | json }}"
+    links="{{ [{name: 'Card link', href: '#'}, {name: 'Another link', href: '#'}] | json }}"
+    list="{{ [{text: 'Cras justo odio', link: '#'}, {text: 'Dapibus ac facilisis in', link:'#'}] | json }}"
+    footer="Footer"
+    align="{{ card.align }}"
+    type="{{ card.type }}"
+    variant="{{ card.variant }}"
+    style="width: 350px">
+    <blockquote class="card-blockquote">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer>Someone famous in
+            <cite title="Source Title">Source Title</cite>
+        </footer>
+    </blockquote>
+</card>
+
+<dropdown
+    value="Action"
+    variant="{{ dropdown.variant }}"
+    size="{{ dropdown.size }}"
+    caret="{{ dropdown.caret }}">
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Completed</a></li>
+        <li><a class="dropdown-item" href="#">Pending</a></li>
+    </ul>
+</dropdown>
+
+<dropdown-select
+    list="{{ dropdownSelect.list | json }}"
+    model="{{@ dropdownSelect.model| json }}"
+    size="{{ dropdownSelect.size }}"
+    variant="{{ dropdownSelect.variant }}"
+    caret="{{ dropdownSelect.caret }}">
+</dropdown-select>
+
+<dropdown-multiselect
+    list="{{ dropdownMultiselect.list | json }}"
+    size="{{ dropdownMultiselect.size }}"
+    variant="{{ dropdownMultiselect.variant }}"
+    max-count="{{dropdownMultiselect.maxCount}}"
+    caret="{{ dropdownMultiselect.caret }}">
+</dropdown-multiselect>
+
+<form-input
+    model="{{@ formInput.model }}"
+    type="text"
+    label="Example Label"
+    placeholder="Placeholder"
+    description="We'll never share your email with anyone else."
+    size="{{ formInput.size }}"
+    state="{{ formInput.state }}"
+    state-icon="{{ formInput.stateIcon }}">
+</form-input>
+
+<form-select
+    model="{{@ formSelect.model }}"
+    options="{{ formSelect.options | json }}"
+    type="text"
+    label="Example Label"
+    default-option="{{ formSelect.default | json }}"
+    description="We'll never share your gender with anyone else."
+    state="{{ formSelect.state }}"
+    size="{{ formSelect.size }}"
+    multiple="{{ formSelect.multiple }}">
+</form-select>
+
+<form-textarea
+    model="{{@ formTextarea.model }}"
+    type="text"
+    label="Example Label"
+    description="Extra textarea description."
+    state="{{ formTextarea.state }}"
+    rows="2">
+</form-textarea>
+
+<form-checkbox
+    list="{{@ formCheckbox.list | json }}"
+    custom="{{ formCheckbox.custom }}"
+    vertical="{{ formCheckbox.vertical }}"
+    state="{{ formCheckbox.state }}">
+</form-checkbox>
+
+<form-radio
+    model="{{@ formRadio.model }}"
+    list="{{ formRadio.list | json }}"
+    custom="{{ formRadio.custom }}"
+    vertical="{{ formRadio.vertical }}"
+    state="{{ formRadio.state }}">
+</form-radio>
+
+<badge variant="{{ label.variant }}" type="{{ label.type }}">open</badge>
+
+<!-- show modal -->
+<button class="btn btn-primary mini" v-on="click: showModal('modal1')">Show Modal</button>
+
+<!-- modal content -->
+<modal id="modal1" size="{{modal.size}}" fade="{{modal.fade}}">
+    <div class="modal-header">
+      <h3>header</h3>
+    </div>
+    <div class="modal-body">
+        body
+    </div>
+    <div class="modal-footer align right">
+        <button class="btn btn-primary" v-on="click: hideModal('modal1')">
+          OK
+        </button>
+    </div>
+</modal>
+
+<!-- in vue methods object -->
+<script>
+showModal: function(id){
+  this.$broadcast('show-modal', id);
+}
+</script>
+
+<pagination
+    size="{{ pagination.size }}"
+    variant="{{ pagination.variant }}"
+    total-rows="{{ pagination.totalRows }}"
+    current-page="{{@ pagination.currentPage }}"
+    per-page="{{ pagination.perPage }}">
+</pagination>
+
+<!-- show spinner -->
+<button v-on="click: showSpinner('spinner-inline')">show inline</button>
+
+<!-- spinner component -->
+<spinner
+    id="spinner-main"
+    size="{{ spinner.size }}"
+    variant="{{ spinner.variant }}"
+    overlay="true"
+    fixed="true"
+    v-cloak>I will close in 2 sec
+</spinner>
+
+<!-- in vue methods object -->
+<script>
+showSpinner: function(id){
+  this.$broadcast('show-spinner', id);
+}
+</script>
+
+<icon name="bar-chart" align="left" variant="{{icon.variant}}"></icon>

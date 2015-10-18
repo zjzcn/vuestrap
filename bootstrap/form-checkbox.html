@@ -1,7 +1,7 @@
 <fieldset class="form-group {{inputState}}">
 	<div class="checkbox" v-repeat="list" v-class="'checkbox-inline': !vertical, disabled: disabled">
-		<label>
-			<input id="{{id}}" type="checkbox" value="{{value}}" autocomplete="off" v-model="checked" disabled="{{disabled}}">{{name}}
+		<label v-class="'c-input': custom, 'c-checkbox': custom">
+			<input id="{{id}}" type="checkbox" value="{{value}}" autocomplete="off" v-model="checked" disabled="{{disabled}}"><span class="c-indicator" v-if="custom"></span> {{name}}
 		</label>
 	</div>
 </fieldset>

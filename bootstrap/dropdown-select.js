@@ -9,20 +9,20 @@ module.exports = {
     },
     computed: {
         btnVariant: function(){
-            return !this.variant || this.variant === 'standard' ? '' : 'btn-' + this.variant;
+            return !this.variant || this.variant === 'default' ? '' : 'btn-' + this.variant;
         },
         btnSize: function(){
-            return !this.size || this.size === 'standard' ? '' : 'btn-' + this.size;
+            return !this.size || this.size === 'default' ? '' : 'btn-' + this.size;
         }
     },
     props: {
         model: {
-            type: Object, 
+            type: Object,
             default: false,
             required: true
-        }, 
+        },
         list: {
-            type: Array, 
+            type: Array,
             default: [],
             required: true
         },

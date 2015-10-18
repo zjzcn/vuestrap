@@ -1,17 +1,27 @@
 require('./_button-toggle.scss');
 module.exports = {
     template: require('./button-toggle.html'),
-    replace: true, 
+    replace: true,
+    computed: {
+    	btnVariant: function(){
+    		return !this.variant || this.variant === 'default' ? 'btn-primary' : 'btn-' + this.variant;
+    	},
+    	btnSize: function(){
+    		return !this.size || this.size === 'default' ? '' : 'btn-' + this.size;
+    	}
+    },
     props: {
         model: {
             type: Boolean,
             twoWay: true,
             required: true
         },
+        // sm | md | lg
         size: {
             type: String,
             default: 'md'
         },
+        // default | primary | success | info | warning | danger
         variant: {
             type: String,
             default: 'primary'
@@ -19,11 +29,6 @@ module.exports = {
         text: {
             type: Object,
             default: ''
-        },
-        // if false spinner will be inline
-        overlay: {
-            type: Boolean,
-            default: false
         }
     },
     methods: {

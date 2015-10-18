@@ -9,7 +9,10 @@ module.exports = {
     },
     computed: {
     	btnVariant: function(){
-    		return !this.variant || this.variant === 'standard' ? '' : 'btn-' + this.variant;
+    		return !this.variant || this.variant === 'default' ? 'btn-primary' : 'btn-' + this.variant;
+    	},
+        btnSize: function(){
+    		return !this.size || this.size === 'default' ? '' : 'btn-' + this.size;
     	}
     },
     props: {
@@ -25,9 +28,17 @@ module.exports = {
         	type: String,
             default: ''
         },
+        aligment: {
+        	type: String,
+            default: 'left'
+        },
+        size: {
+        	type: String,
+            default: 'default'
+        },
         variant: {
         	type: String,
-            default: ''
+            default: 'default'
         }
     },
     methods: {

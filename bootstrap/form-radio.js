@@ -4,7 +4,7 @@ module.exports = {
     replace: true,
     computed: {
         inputState: function(){
-            return !this.state || this.state === 'standard' ? '' : 'has-' + this.state;
+            return !this.state || this.state === 'default' ? '' : 'has-' + this.state;
         }
     },
     props: {
@@ -14,17 +14,21 @@ module.exports = {
     		required: true
     	},
         list: {
-          type: Array, 
+          type: Array,
           default: [],
           required: true
         },
+        custom: {
+        	type: Boolean,
+        	default: true
+        },
         vertical: {
-        	type: Boolean, 
+        	type: Boolean,
         	default: false
         },
         state: {
-        	type: String, 
-        	default: 'standard'
+        	type: String,
+        	default: 'default'
         }
     }
 };

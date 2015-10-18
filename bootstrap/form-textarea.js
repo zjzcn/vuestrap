@@ -5,7 +5,7 @@ module.exports = {
     replace: true,
     computed: {
         inputState: function(){
-            return !this.state || this.state === 'standard' ? '' : 'has-' + this.state;
+            return !this.state || this.state === 'default' ? '' : 'has-' + this.state;
         },
     },
     props: {
@@ -16,7 +16,7 @@ module.exports = {
         id: {
             type: String,
             default: uniqueId
-        }, 
+        },
     	label: {
     		type: String,
     		default: false
