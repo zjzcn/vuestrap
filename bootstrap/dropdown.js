@@ -42,15 +42,21 @@ module.exports = {
         }
     },
     methods: {
-        toggle: function() {
+        toggle: function(e) {
             // hide an alert
             this.show = !this.show;
             // Dispatch an event from the current vm that propagates all the way up to its $root
             if (this.show) {
             	this.$dispatch('show::dropdown');
+                e.stopPropagation();
             } else {
             	this.$dispatch('hide::dropdown');
             }
         }
+    },
+    events: {
+      'close::dropdown': function(val){
+          this.show = false;
+      }
     }
 };

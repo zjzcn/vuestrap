@@ -34,11 +34,15 @@ module.exports = {
             type: Boolean,
             default: true
         },
-        variant: {
+        alignment: {
+            type: String,
+            default: "left"
+        },
+        size: {
             type: String,
             default: ''
         },
-        size: {
+        variant: {
             type: String,
             default: ''
         },
@@ -48,11 +52,27 @@ module.exports = {
         }
     },
     methods: {
+        toggle: function(e) {
+            // hide an alert
+            this.show = !this.show;
+            // Dispatch an event from the current vm that propagates all the way up to its $root
+            if (this.show) {
+            	this.$dispatch('show::dropdown');
+                e.stopPropagation();
+            } else {
+            	this.$dispatch('hide::dropdown');
+            }
+        },
         select: function(item) {
             this.model = item;
             this.show = false;
             // Dispatch an event from the current vm that propagates all the way up to its $root
-            this.$dispatch('hide::dropdown', item);
+            this.$dispatch('select::dropdown', item);
         }
+    },
+    events: {
+      'close::dropdown': function(val){
+          this.show = false;
+      }
     }
 };

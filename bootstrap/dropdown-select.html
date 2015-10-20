@@ -1,19 +1,22 @@
-<div class="dropdown" v-class="open: show">
-    <button 
+<div class="dropdown dropdown-select" v-class="open: show">
+    <button
         id="dLabel"
-        class="btn {{btnVariant}} {{btnSize}} dropdown" 
-        role="button" 
-        aria-haspopup="true" 
-        aria-expanded="show" 
-        v-on="click: show = !show"
+        class="btn {{btnVariant}} {{btnSize}} dropdown"
+        role="button"
+        aria-haspopup="true"
+        aria-expanded="show"
+        v-on="click: toggle($event)"
         v-class="'dropdown-toggle': caret">
         <app-icon icon="{{icon}}" v-show="icon"></app-icon>
         <span v-if="model && !defaultOption">{{model.name}}</span>
         <span v-if="defaultOption">{{defaultOption}}</span>
     </button>
-    <ul class="dropdown-menu" aria-labelledby="dLabel">
+    <ul class="dropdown-menu" v-class="'dropdown-menu-right' : alignment == 'right'" aria-labelledby="dLabel">
         <li v-repeat="item in list">
             <button class="dropdown-item" v-on="click: select(item)">{{item.name}}</button>
         </li>
     </ul>
+
+    <!-- catch click on outside the dropdown -->
+    <!-- <div class="click-catcher" v-if="show" v-on="click: close($event)"></div> -->
 </div>
