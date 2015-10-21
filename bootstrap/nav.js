@@ -5,6 +5,7 @@ module.exports = {
   data() {
     return {
       updatedList: [],
+      flatList: [],
     };
   },
 
@@ -54,8 +55,15 @@ module.exports = {
   },
   methods: {
     select(newTab) {
+
       // IGNORE DISABLED
       if (newTab.disabled) return;
+
+      // if item has dropdown
+      if (newTab.dropdown) {
+        newTab.dropdownIsOpen = !newTab.dropdownIsOpen;
+        return;
+      }
 
       // OLD TAB
       var old = {};
@@ -65,22 +73,31 @@ module.exports = {
         if (tab.active) {
           old = tab;
         }
+
+        if (tab.dropdown) {
+          tab.dropdownIsOpen = false;
+          tab.dropdown.forEach((tab) => {
+            if (tab.active) {
+              old = tab;
+            }
+          }.bind(this));
+        }
       }.bind(this));
 
       // allow animation to complete before old tab gets hiden - fade out
-      old.animate = false;
+      old.$set('animate', false);
 
       // let animation finish in 150ms and show new tab
       setTimeout(() => {
 
         // hide old tab
-        old.active = false;
+        old.$set('active', false);
 
         // SHOW NEW TAB
-        newTab.active = true;
+        newTab.$set('active', true);
 
         // do some fade-in animation
-        newTab.animate = true;
+        newTab.$set('animate', true);
 
         // notify change to other components
         this.$dispatch('change::tab', newTab);
@@ -89,6 +106,7 @@ module.exports = {
     },
   },
   ready() {
+
     // add animate field if not present on the list objects
     // this is rerquired as Vue needs to bind with data
     var activeTab;
@@ -100,6 +118,8 @@ module.exports = {
         name: tab.name,
         disabled: tab.disabled,
         icon: tab.icon,
+        dropdown: tab.dropdown,
+        dropdownIsOpen: false,
         active: tab.active,
         animate: false,
       };
@@ -108,6 +128,15 @@ module.exports = {
       if (item.active) {
         activeTab = item;
         item.animate = true;
+      }
+
+      // add all objects to a flat array including dropdowns but excluding it's parents
+      if (item.dropdown) {
+        tab.dropdown.forEach((item) => {
+          this.flatList.push(item);
+        }.bind(this));
+      } else {
+        this.flatList.push(item);
       }
 
       this.updatedList.push(item);

@@ -1,12 +1,38 @@
 <ul class="nav {{navType}}" v-class="'nav-stacked': vertical">
-    <li class="nav-item" v-repeat="item in updatedList" v-show="type != 'default'">
-        <a class="nav-link" href="{{item.href}}" v-class="disabled: item.disabled, active: item.active" v-if="item.href"><icon name="item.icon.name" variant="item.icon.variant" v-if="item.icon"> {{item.name}}</a>
-        <span class="nav-link btn {{btnSize}}" v-class="disabled: item.disabled, active: item.active" v-if="!item.href" v-on="click: select(item)"><icon name="{{ item.icon.name }}" variant="{ {item.icon.variant }}" v-if="item.icon"></icon> {{item.name}}</span>
+    <li class="nav-item" v-class="dropdown: item.dropdown, open: item.dropdownIsOpen" v-repeat="item in updatedList" v-show="type != 'default'">
+        <span
+          class="nav-link btn {{btnSize}}"
+          v-class="disabled: item.disabled, active: item.active, 'dropdown-toggle': item.dropdown"
+          v-on="click: select(item)"
+          aria-haspopup="true"
+          aria-expanded="item.dropdownIsOpen"
+          role="button">
+          <icon name="{{ item.icon.name }}" variant="{ {item.icon.variant }}" v-if="item.icon"></icon>
+          <a href="{{item.href}}" v-if="item.href"> {{item.name}}</a>
+          <span v-if="!item.href"> {{item.name}}</span>
+        </span>
+        <div class="dropdown-menu" v-if="item.dropdown">
+          <span
+            class="dropdown-item btn {{btnSize}}"
+            v-class="disabled: subitem.disabled, active: subitem.active, 'dropdown-toggle': subitem.dropdown"
+            v-repeat="subitem in item.dropdown"
+            v-on="click: select(subitem)"
+            aria-haspopup="true"
+            aria-expanded="subitem.dropdown.open"
+            role="button">
+            <icon name="{{ subitem.icon.name }}" variant="{ {subitem.icon.variant }}" v-if="subitem.icon" aria-haspopup="true" aria-expanded="false"></icon>
+              <a
+                href="{{subitem.href}}"
+                v-if="subitem.href"> {{subitem.name}}
+              </a>
+              <span v-if="!subitem.href">{{subitem.name}}</span>
+          </span>
+        </div>
     </li>
     <a class="nav-item" v-repeat="item in updatedList" v-show="type == 'default'" href="{{item.href}}" v-class="disabled: item.disabled, active: item.active">{{item.name}} </a>
 </ul>
 <div class="tab-content" v-if="type == 'tabs'">
-    <div role="tabpanel" id="{{id}}" class="tab-pane fade" v-class="disabled: disabled, active: active, in: animate || !fade" v-repeat="updatedList">
+    <div role="tabpanel" id="{{id}}" class="tab-pane fade" v-class="disabled: disabled, active: active, in: animate || !fade" v-repeat="flatList">
         <content select="div:nth-child({{$index + 1}})"></content>
     </div>
 </div>
