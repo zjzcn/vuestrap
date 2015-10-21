@@ -1,14 +1,12 @@
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#">Another link</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link disabled" href="#">Disabled</a>
-  </li>
+<ul class="nav {{navType}}" v-class="'nav-stacked': vertical">
+    <li class="nav-item" v-repeat="item in updatedList" v-show="type != 'default'">
+        <a class="nav-link" href="{{item.href}}" v-class="disabled: item.disabled, active: item.active" v-if="item.href">{{item.name}}</a>
+        <span class="nav-link btn {{btnSize}}" v-class="disabled: item.disabled, active: item.active" v-if="!item.href" v-on="click: select(item)">{{item.name}}</span>
+    </li>
+    <a class="nav-item" v-repeat="item in updatedList" v-show="type == 'default'" href="{{item.href}}" v-class="disabled: item.disabled, active: item.active">{{item.name}} </a>
 </ul>
+<div class="tab-content" v-if="type == 'tabs'">
+    <div role="tabpanel" id="{{id}}" class="tab-pane fade" v-class="disabled: disabled, active: active, in: animate || !fade" v-repeat="updatedList">
+        <content select="div:nth-child({{$index + 1}})"></content>
+    </div>
+</div>

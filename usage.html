@@ -157,6 +157,18 @@ showModal: function(id){
 }
 </script>
 
+<navigation  
+    list="{{ nav.list | json }}"
+    type="{{ nav.type }}"
+    vertical="{{ nav.vertical }}"
+    size="{{ nav.size }}">
+    <!-- Content -->
+    <div class="tab-1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, officiis.</p></div>
+    <div class="tab-2"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, tempore!</p></div>
+    <div class="tab-3"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, quam.</P></div>
+    <!-- /Content -->
+</navigation>
+
 <pagination
     size="{{ pagination.size }}"
     variant="{{ pagination.variant }}"
