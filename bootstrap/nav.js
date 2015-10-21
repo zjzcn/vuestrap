@@ -99,6 +99,7 @@ module.exports = {
         id: tab.id,
         name: tab.name,
         disabled: tab.disabled,
+        icon: tab.icon,
         active: tab.active,
         animate: false,
       };

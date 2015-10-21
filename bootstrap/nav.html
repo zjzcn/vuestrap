@@ -1,7 +1,7 @@
 <ul class="nav {{navType}}" v-class="'nav-stacked': vertical">
     <li class="nav-item" v-repeat="item in updatedList" v-show="type != 'default'">
-        <a class="nav-link" href="{{item.href}}" v-class="disabled: item.disabled, active: item.active" v-if="item.href">{{item.name}}</a>
-        <span class="nav-link btn {{btnSize}}" v-class="disabled: item.disabled, active: item.active" v-if="!item.href" v-on="click: select(item)">{{item.name}}</span>
+        <a class="nav-link" href="{{item.href}}" v-class="disabled: item.disabled, active: item.active" v-if="item.href"><icon name="item.icon.name" variant="item.icon.variant" v-if="item.icon"> {{item.name}}</a>
+        <span class="nav-link btn {{btnSize}}" v-class="disabled: item.disabled, active: item.active" v-if="!item.href" v-on="click: select(item)"><icon name="{{ item.icon.name }}" variant="{ {item.icon.variant }}" v-if="item.icon"></icon> {{item.name}}</span>
     </li>
     <a class="nav-item" v-repeat="item in updatedList" v-show="type == 'default'" href="{{item.href}}" v-class="disabled: item.disabled, active: item.active">{{item.name}} </a>
 </ul>

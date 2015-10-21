@@ -73,3 +73,10 @@
 	    fill: $kzima-icon-fill-light;
 	}
 }
+
+// if inside disabled button, decrease opacity
+.btn.disabled {
+  .icon {
+    opacity: 0.5;
+  }
+}
