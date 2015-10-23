@@ -1,5 +1,5 @@
-<ul class="nav nav-pills" v-class="'nav-stacked': vertical">
-    <li class="nav-item" v-class="dropdown: item.dropdown, open: item.open" v-repeat="item in list">
+<ul class="nav nav-tabs">
+    <li class="nav-item" v-class="dropdown: item.dropdown, open: item.open" v-repeat="item in updatedList">
         <span
           class="nav-link btn {{ btnSize }}"
           v-class="disabled: item.disabled, active: item.active, 'dropdown-toggle': item.dropdown"
@@ -30,3 +30,8 @@
         </div>
     </li>
 </ul>
+<div class="tab-content">
+    <div role="tabpanel" id="{{ id }}" class="tab-pane fade" v-class="disabled: disabled, active: active, in: animate || !fade" v-repeat="flatList">
+        <content select="div:nth-child({{ $index + 1 }})"></content>
+    </div>
+</div>
