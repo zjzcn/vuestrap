@@ -1,7 +1,7 @@
  /*!
- * 
+ *
  * Spinner
- * 
+ *
  * Inspired by Semantic UI loader
  * http://github.com/semantic-org/semantic-ui/
  *
@@ -36,7 +36,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Standard Size
 // --------------------------------------------------
-.gritcode-spinner {
+.spinner-gritcode {
     text-align: center;
     position: relative;
     margin: auto;
@@ -66,7 +66,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Shapes
 // --------------------------------------------------
-.gritcode-spinner {
+.spinner-gritcode {
     &.spinner-sm {
         width: 1.2857em;
         height: 1.2857em;
@@ -86,12 +86,12 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 }
 
 // spinner wrapper with overlay
-.gritcode-spinner-wrapper {
+.spinner-gritcode-wrapper {
     height: 100%;
     width: 100%;
     z-index: 9998;
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
         height: 100%;
         width: 100%;
         z-index: 9999;
-	}   
+	}
     .spinner {
         display: block;
     }
@@ -121,7 +121,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Variants for main application spinner
 // --------------------------------------------------
-.gritcode-spinner-wrapper {
+.spinner-gritcode-wrapper {
     &.spinner-inverted {
         @include spinner-variant(#fff, $spinner-color);
         .overlay {
@@ -147,7 +147,7 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 
 // Variants for inline spinner
 // --------------------------------------------------
-.gritcode-spinner {
+.spinner-gritcode {
     &.spinner-primary {
         @include spinner-variant-inline($brand-primary);
     }
@@ -166,13 +166,13 @@ $overlay-bg: rgba(255,255,255,0.8) !default;
 }
 
 // States
-// --------------------------------------------------        
-.gritcode-spinner-wrapper {
-    &.disabled { 
+// --------------------------------------------------
+.spinner-gritcode-wrapper {
+    &.disabled {
         display: none;
     }
 }
-    
+
 // Active Animation
 // --------------------------------------------------
 @keyframes spin {

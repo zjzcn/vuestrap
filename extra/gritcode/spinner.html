@@ -1,8 +1,8 @@
-<div id="{{id}}" class="spinner-wrapper gritcode-spinner-wrapper spinner-{{variant}}" v-class="'spinner-fixed': fixed" v-show="active" v-if="overlay">
+<div id="{{id}}" class="spinner-wrapper spinner-gritcode-wrapper spinner-{{variant}}" v-class="'spinner-fixed': fixed" v-show="active" v-if="overlay">
 	<div class="overlay"></div>
 	<div class="text-center">
 		<div class="spinner gritcode-spinner spinner-{{size}} "></div>
 		<content></content>
 	</div>
 </div>
-<div id="{{id}}" class="spinner gritcode-spinner spinner-{{size}} spinner-{{variant}}" v-show="active" v-if="!overlay"></div>
+<div id="{{id}}" class="spinner spinner-gritcode spinner-{{size}} spinner-{{variant}}" v-show="active" v-if="!overlay"></div>

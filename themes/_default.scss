@@ -2,33 +2,33 @@
   THEME: Default
  */
 
-// Variables
-//
-// Copy settings from this file into the provided `_custom.scss` to override
-// the Bootstrap defaults without modifying key, versioned files.
+ // Variables
+ //
+ // Copy settings from this file into the provided `_custom.scss` to override
+ // the Bootstrap defaults without modifying key, versioned files.
 
 
-// Table of ontents
-//
-// Colors
-// Options
-// Spacing
-// Body
-// Links
-// Grid breakpoints
-// Grid containers
-// Grid columns
-// Fonts
-// Components
+ // Table of ontents
+ //
+ // Colors
+ // Options
+ // Spacing
+ // Body
+ // Links
+ // Grid breakpoints
+ // Grid containers
+ // Grid columns
+ // Fonts
+ // Components
 
-// General variable structure
-//
-// Variable format should follow the `$component-modifier-state-property` order.
+ // General variable structure
+ //
+ // Variable format should follow the `$component-modifier-state-property` order.
 
 
-// Colors
-//
-// Grayscale and brand colors for use across Bootstrap.
+ // Colors
+ //
+ // Grayscale and brand colors for use across Bootstrap.
 
 $gray-dark:                 #373a3c !default;
 $gray:                      #55595c !default;
@@ -89,16 +89,16 @@ $link-hover-decoration:      underline !default;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-  // Extra small screen / phone
-  xs: 0,
-  // Small screen / phone
-  sm: 34em,
-  // Medium screen / tablet
-  md: 48em,
-  // Large screen / desktop
-  lg: 62em,
-  // Extra large screen / wide desktop
-  xl: 75em
+ // Extra small screen / phone
+ xs: 0,
+ // Small screen / phone
+ sm: 34em,
+ // Medium screen / tablet
+ md: 48em,
+ // Large screen / desktop
+ lg: 62em,
+ // Extra large screen / wide desktop
+ xl: 75em
 ) !default;
 
 
@@ -107,10 +107,10 @@ $grid-breakpoints: (
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-  sm: 34rem,    // 480
-  md: 45rem,    // 720
-  lg: 60rem,    // 960
-  xl: 72.25rem  // 1140
+ sm: 34rem,    // 480
+ md: 45rem,    // 720
+ lg: 60rem,    // 960
+ xl: 72.25rem  // 1140
 ) !default;
 
 
@@ -247,7 +247,7 @@ $btn-danger-border:              $btn-danger-bg !default;
 $btn-link-disabled-color:        $gray-light !default;
 
 $btn-padding-x-sm:               .75rem !default;
-$btn-padding-y-sm:               .25rem !default;
+$btn-padding-y-sm:               .275rem !default;
 
 $btn-padding-x-lg:               1.25rem !default;
 $btn-padding-y-lg:               .75rem !default;
