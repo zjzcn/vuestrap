@@ -8,20 +8,14 @@
         display: inline-block;
         outline: none;
         transition: transform .35s;
-        // GPU support with fallback
-        transform: translate(-100%);
-        transform: translateX(-100%) translateZ(0);
-        transform: translate3d(-100%, 0, 0);
+        @include translate3d(-100%);
         &:active,&:hover,&:visited,&:focus {
             outline: none;
         }
     }
     &.active {
         .btn {
-          // GPU support with fallback
-          transform: translate(0%);
-          transform: translateX(0%) translateZ(0);
-          transform: translate3d(0%, 0, 0);
+          @include translate3d(0%);
         }
         .handle {
             left: calc(100% - 12px);

@@ -1,0 +1,6 @@
+// 3d translate mixin with fallback
+
+@mixin translate3d($x: 0, $y: 0, $z: 0) {
+  transform: translate($x, $y);
+  transform: translate3d($x, $y, $z);
+}
