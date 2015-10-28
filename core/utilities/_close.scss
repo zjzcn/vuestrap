@@ -26,3 +26,9 @@ button.close {
   border: 0;
   -webkit-appearance: none;
 }
+
+.bg-inverse {
+  button.close {
+    color: #fff;
+  }
+}
