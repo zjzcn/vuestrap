@@ -74,9 +74,16 @@
 	}
 }
 
-// if inside disabled button, decrease opacity
+// if icon is inside disabled button, decrease opacity
 .btn.disabled {
   .icon {
     opacity: 0.5;
+  }
+}
+
+// if icon is inside hovered state button, make it white
+.btn:hover {
+  .icon {
+    fill: $kzima-icon-fill-light;
   }
 }
