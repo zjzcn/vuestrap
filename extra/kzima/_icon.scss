@@ -80,10 +80,3 @@
     opacity: 0.5;
   }
 }
-
-// if icon is inside hovered state button, make it white
-.btn:hover {
-  .icon {
-    fill: $kzima-icon-fill-light;
-  }
-}
