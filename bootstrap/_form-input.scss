@@ -1,0 +1,19 @@
+$form-input-left-col-size: 4;
+$form-input-right-col-size: 7;
+$form-input-right-col-help: 1;
+.form-group {
+	.col-left {
+		@include make-col-span($form-input-left-col-size);
+		@include make-col();
+
+	}
+	.col-right {
+		@include make-col-span($form-input-right-col-size);
+		@include make-col();
+	}
+	.col-help {
+		@include make-col-span($form-input-right-col-help);
+		@include make-col();
+		line-height: $line-height;
+	}
+}

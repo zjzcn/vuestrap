@@ -1,89 +1,139 @@
-@mixin icon-variant ($color) {
-    .kzima-icon {
-        fill: $color;
+@mixin icon-variant ($mainColor, $secondaryColor) {
+    .icon {
+        fill: $mainColor;
+    }
+    &.icons-filled {
+        .icon {
+            @include square(50%);
+            top: 28%;
+            left: 25%;
+            fill: $secondaryColor;
+        }
+        .icon-background {
+            fill: $mainColor;
+        }
+    }
+    &.icons-outline {
+        .icon {
+            top: 28%;
+            left: 25%;
+            @include square(50%);
+        }
+        .icon-background {
+            fill: $mainColor;
+        }
+        .text {
+            color: $mainColor;
+        }
+    }
+}
+
+@mixin icon-size ($size) {
+    @include square($size);
+    .text {
+        line-height: $size;
     }
 }
 
 // global default
-.kzima-icon {
-	@include square($font-size-base);
-	display: inline-block;
-	vertical-align: middle;
-	margin-top: -4px;
-	&.icon-right {
-		margin-left: 5px;
-		margin-right: 0;
-	}
-	&.icon-left {
-		margin-left: 0;
-		margin-right: 5px;
-	}
+.icons-kzima {
+    font-size: $kzima-icon-size-md;
+    @include square($kzima-icon-size-md);
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+    position: relative;
+    text-align: center;
+    .icon {
+        @include square(100%);
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: 2;
+    }
+    .icon-background {
+        @include square(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .text {
+        position: relative;
+        color: #fff;
+        z-index: 3;
+        font-size: 0.8em;
+        line-height: 1.2em;
+        vertical-align: middle;
+        display: block;
+    }
+    &.icons-right {
+        margin-left: 5px;
+        margin-right: 0;
+    }
+    &.icons-left {
+        margin-left: 0;
+        margin-right: 5px;
+    }
 }
 
 // svg icon sizes
-.kzima-icon {
-	&.icon-sm {
-	    @include square($kzima-icon-size-sm);
-	}
-
-	&.icon-md {
-	    @include square($kzima-icon-size-md);
-	}
-
-	&.icon-lg {
-	    @include square($kzima-icon-size-lg);
-	}
-
-	&.icon-xl {
-	    @include square($kzima-icon-size-xl);
-	}
-
-	&.icon-xxl {
-	    @include square($kzima-icon-size-xxl);
-	}
+.icons-kzima {
+    &.icons-sm {
+        @include icon-size($kzima-icon-size-sm)
+    }
+    &.icons-md {
+        @include icon-size($kzima-icon-size-md)
+    }
+    &.icons-lg {
+        @include icon-size($kzima-icon-size-lg)
+    }
+    &.icons-xl {
+        @include icon-size($kzima-icon-size-xl)
+    }
+    &.icons-xxl {
+        @include icon-size($kzima-icon-size-xxl)
+    }
 }
 
 // svg icon fill variants
-.kzima-icon {
-	&.icon-primary {
-	    fill: $kzima-icon-fill-primary;
-	}
-
-	&.icon-info {
-	    fill: $kzima-icon-fill-info;
-	}
-
-	&.icon-success {
-	    fill: $kzima-icon-fill-success;
-	}
-
-	&.icon-warning {
-	    fill: $kzima-icon-fill-warning;
-	}
-
-	&.icon-danger {
-	    fill: $kzima-icon-fill-danger;
-	}
-
-	&.icon-dark {
-	    fill: $kzima-icon-fill-dark;
-	}
-
-	&.icon-light {
-	    fill: $kzima-icon-fill-light;
-	}
+.icons-kzima {
+    //default
+    @include icon-variant($kzima-icon-fill-dark, $kzima-icon-fill-light);
+    // other variants
+    &.icons-primary {
+        @include icon-variant($kzima-icon-fill-primary, #fff);
+    }
+    &.icons-info {
+        @include icon-variant($kzima-icon-fill-info, #fff);
+    }
+    &.icons-success {
+        @include icon-variant($kzima-icon-fill-success, #fff);
+    }
+    &.icons-warning {
+        @include icon-variant($kzima-icon-fill-warning, #fff);
+    }
+    &.icons-danger {
+        @include icon-variant($kzima-icon-fill-danger, #fff);
+    }
+    &.icons-dark {
+        @include icon-variant($kzima-icon-fill-dark, $kzima-icon-fill-light);
+    }
+    &.icons-light {
+        @include icon-variant($kzima-icon-fill-light, $kzima-icon-fill-dark);
+    }
 }
 
 // if icon is inside disabled button, decrease opacity
 .btn.disabled {
-  .icon {
-    opacity: 0.5;
-  }
+    svg {
+        opacity: 0.5;
+    }
 }
 
 // if icon is inside hovered state button, make it white
 .btn:hover {
-  .icon {
-    fill: $kzima-icon-fill-light;
-  }
+    svg {
+        fill: $kzima-icon-fill-light;
+    }
 }

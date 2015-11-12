@@ -1,10 +1,20 @@
 require('./_forms.scss');
+require('./_form-input.scss');
 var uniqueId = require('./make-id.js');
 module.exports = {
     template: require('./form-input.html'),
     replace: true,
     computed: {
-        inputState: function(){
+        formControlState: function(){
+            if (this.model.valid) {
+                return 'form-control-success';
+            }
+            return !this.state || this.state === 'default' ? '' : 'form-' + this.state;
+        },
+        formGroupState: function(){
+            if (this.model.valid) {
+                return 'has-success';
+            }
             return !this.state || this.state === 'default' ? '' : 'has-' + this.state;
         },
         stateIconType: function(){
@@ -16,14 +26,13 @@ module.exports = {
     },
     props: {
         model: {
+            type: Object,
             twoWay: true,
             required: true,
-            type: String
         },
         type: {
             type: String,
             default: 'text',
-            required: true
         },
         id: {
             type: String,
@@ -52,7 +61,18 @@ module.exports = {
         stateIcon: {
             type: Boolean,
             default: true
+        },
+        validation: {
+            type: Object,
+            default: ''
+        },
+        inline: {
+            type: Boolean,
+            default: true
+        },
+        help: {
+            type: String,
+            default: ""
         }
-
     }
 };

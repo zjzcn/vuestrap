@@ -4,7 +4,7 @@ module.exports = {
     replace: true,
     computed: {
         labelVariant: function(){
-            return !this.variant || this.variant === 'default' ? '' : 'label-' + this.variant;
+            return !this.variant || this.variant === 'default' ? 'label-default' : 'label-' + this.variant;
         },
         labelType: function(){
             return !this.type ? '' : 'label-' + this.type;

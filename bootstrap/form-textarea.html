@@ -1,5 +1,24 @@
-<fieldset class="form-group {{inputState}}">
-    <label for="{{id}}" v-if="label">{{label}}</label>
-    <textarea class="form-control" id="{{id}}" rows="{{rows}}" v-model="model"></textarea>
-    <small class="text-muted" v-if="description" v-html="description"></small>
+<fieldset class="form-group {{formGroupState}}" v-class="'row': inline">
+    <label for="{{id}}" v-if="label" class="form-control-label text-right" v-class="'col-left' : inline">{{label}}</label>
+    <div v-class="'col-right' : inline">
+	    <textarea 
+	    	class="form-control" 
+	    	id="{{id}}" 
+	    	rows="{{rows}}" 
+	    	v-model="model.value" 
+	    	v-validate="validation">
+	    </textarea>
+	    <small class="text-muted" v-if="description" v-html="description"></small>
+    </div>
+    <div class="form-control-label" v-if="help.length > 0">
+		<popover title="Help" text="{{help}}" position="right" triggers="{{ ['hover'] }}">
+			<icon 
+	        name="question-mark"
+	        background="circle-outline" 
+	        size="md" 
+	        variant="info" 
+	        align="left">
+	       </icon>
+		</popover>
+	</div>
 </fieldset>

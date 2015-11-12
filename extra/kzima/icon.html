@@ -1,3 +1,9 @@
-<svg viewBox="0 0 48 48" class="icon kzima-icon icon-{{size}} icon-{{align}} icon-{{variant}} svg-{{name}}-dims">
-	<use v-attr="'xlink:href' : path + '#' + name"></use>
-</svg>
+<span class="icons icons-kzima {{iconsSize}} {{iconsAlign}} {{iconsVariant}} {{iconsBackground}}">
+	<svg class="icon" v-if="name">
+		<use v-attr="'xlink:href' : path + '#' + name"></use>
+	</svg>
+	<svg class="icon-background" v-if="background">
+		<use v-attr="'xlink:href' : path + '#' + background"></use>
+	</svg>
+	<span class="text"><content>{{text}}</content></span>
+</span>

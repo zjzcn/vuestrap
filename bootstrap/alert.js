@@ -15,15 +15,13 @@ module.exports = {
             default: false,
             required: true
         },
-        message: {
-            type: String,
-            default: '',
-            required: true
-        },
         state: {
             type: String,
             default: 'success'
         },
+        icon: {
+
+        }, 
         dismissible: {
             type: Boolean,
             default: false

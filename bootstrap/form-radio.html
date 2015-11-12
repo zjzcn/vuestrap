@@ -1,8 +1,17 @@
 <fieldset class="form-group {{inputState}}">
-	<div class="radio" v-repeat="list" v-class="'radio-inline': !vertical, disabled: disabled">
+	<div class="radio" v-repeat="item in list" v-class="'radio-inline': !vertical, disabled: item.disabled">
 		<label v-class="'c-input': custom, 'c-radio': custom">
-			<input id="{{id}}" type="radio" name="options" value="{{value}}" autocomplete="off" v-model="model" disabled="{{disabled}}">
-		 	<span class="c-indicator" v-if="custom"></span> {{name}}
+			<input id="{{item.id}}" type="radio" name="{{name}}" value="{{item.value}}" autocomplete="off" v-model="model.value" disabled="{{item.disabled}}" v-validate="validation">
+		 	<span class="c-indicator" v-if="custom"></span> <span v-html="item.name"></span> 
 		</label>
+		<popover title="Help" text="{{item.help}}" position="right" triggers="{{ ['hover'] }}" v-if="item.help.length > 0">
+			<icon 
+	        name="question-mark"
+	        background="circle-outline" 
+	        size="md" 
+	        variant="info" 
+	        align="left">
+	       </icon>
+		</popover>
 	</div>
 </fieldset>

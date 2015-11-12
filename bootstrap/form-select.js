@@ -5,7 +5,10 @@ module.exports = {
     replace: true,
     computed: {
         allOptions: function(){
-            return [this.defaultOption].concat(this.options);
+            if (this.defaultOption) {
+                return [this.defaultOption].concat(this.options);
+            }
+            return this.options;
         },
         inputState: function(){
             return !this.state || this.state === 'default' ? '' : 'has-' + this.state;
@@ -45,11 +48,19 @@ module.exports = {
         },
         size: {
             type: String,
-            default: ''
+            default: 'md'
         },
         multiple: {
             type: Boolean,
             default: false
+        },
+        inline: {
+            type: Boolean,
+            default: true
+        },
+        help: {
+            type: String,
+            default: true
         }
     },
     watch: {

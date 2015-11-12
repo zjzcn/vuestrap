@@ -1,7 +1,16 @@
 <fieldset class="form-group {{inputState}}">
 	<div class="checkbox" v-repeat="list" v-class="'checkbox-inline': !vertical, disabled: disabled">
 		<label v-class="'c-input': custom, 'c-checkbox': custom">
-			<input id="{{id}}" type="checkbox" value="{{value}}" autocomplete="off" v-model="checked" disabled="{{disabled}}"><span class="c-indicator" v-if="custom"></span> {{name}}
+			<input id="{{id}}" type="checkbox" value="{{value}}" autocomplete="off" v-model="checked" disabled="{{disabled}}"><span class="c-indicator" v-if="custom"></span> <span v-html="name"></span> 
 		</label>
+		<popover title="Help" text="{{help}}" position="right" triggers="{{ ['hover'] }}" v-if="help.length > 0">
+			<icon 
+	        name="question-mark"
+	        background="circle-outline" 
+	        size="md" 
+	        variant="info" 
+	        align="left">
+	       </icon>
+		</popover>
 	</div>
 </fieldset>

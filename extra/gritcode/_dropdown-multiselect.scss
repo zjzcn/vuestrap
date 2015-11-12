@@ -38,11 +38,14 @@
     .dropdown-item {
       display: flex;
       justify-content: space-between;
-      span {
+      span:not(.icons) {
         width: $gritcode-dropdown-multiselect-width - 20px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+      }
+      .icons-kzima {
+        margin-top: 0;
       }
       svg.icon {
         margin-top: 3px;

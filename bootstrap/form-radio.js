@@ -9,10 +9,14 @@ module.exports = {
     },
     props: {
     	model: {
-    		type: String,
+    		type: Object,
     		twoWay: true,
     		required: true
     	},
+        name: {
+            type: String,
+            default: 'options'
+        },
         list: {
           type: Array,
           default: [],
@@ -29,6 +33,13 @@ module.exports = {
         state: {
         	type: String,
         	default: 'default'
+        },
+        validation: {
+            type: Object,
+            default: ''
         }
+    },
+    ready() {
+        console.log(this.name);
     }
 };

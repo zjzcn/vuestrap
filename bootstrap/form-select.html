@@ -1,6 +1,18 @@
-<fieldset class="form-group {{inputState}}">
-    <label for="{{id}}" v-if="label">{{label}} {{multiple ? 'multiple' : ''}}</label>
-    <select class="form-control {{inputSize}}" id="{{id}}" v-model="model" options="allOptions" v-if="!multiple"></select>
-    <select class="form-control {{inputSize}}" id="{{id}}" v-model="model" options="allOptions" multiple v-if="multiple"></select>
-    <small class="text-muted" v-if="description" v-html="description"></small>
+<fieldset class="form-group {{inputState}}" v-class="'row': inline">
+    <label for="{{id}}" class="form-control-label text-right" v-class="'col-left' : inline"><span  v-if="label">{{label}} {{multiple ? 'multiple' : ''}}</span></label>
+    <div v-class="'col-right' : inline">
+	    <select class="form-control {{inputSize}}" id="{{id}}" v-model="model" options="allOptions" v-if="!multiple"></select>
+    	<small class="text-muted" v-if="description" v-html="description"></small>
+    </div>
+    <div class="form-control-label" v-class="" v-if="help.length > 0">
+			<popover title="Help" text="{{help}}" position="right" triggers="{{ ['hover'] }}">
+				<icon 
+	        name="question-mark"
+	        background="circle-outline" 
+	        size="md" 
+	        variant="info" 
+	        align="left">
+	       </icon>
+			</popover>
+		</div>
 </fieldset>
