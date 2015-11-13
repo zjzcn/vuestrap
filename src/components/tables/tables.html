@@ -1,0 +1,11 @@
+<table v-bind:class="{ table: styled, 'table-responsive': responsive, 'table-sm': small, 'table-hover': hover, 'table-bordered': border, 'table-striped': striped, 'table-inverse': inverse }">
+  <thead v-bind:class="{ 'thead-inverse': theadType == 'inverse', 'thead-default': theadType == 'default' }">
+    <slot name="thead"></slot>
+  </thead>
+  <tbody>
+    <slot name="tbody"></slot>
+  </tbody>
+  <tfoot>
+    <slot name="tfoot"></slot>
+  </tfoot>
+</table>

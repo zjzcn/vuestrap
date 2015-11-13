@@ -1,0 +1,46 @@
+<ul class="nav nav-tabs">
+    <li class="nav-item" v-bind:class="{ dropdown: item.dropdown, open: item.open }" v-for="item in updatedList">
+        <span 
+          class="nav-link btn {{ btnSize }}" 
+          v-bind:class="{ disabled: item.disabled, active: item.active, 'dropdown-toggle': item.dropdown }" 
+          v-on="click: select(item)" 
+          aria-haspopup="true" 
+          aria-expanded="item.open" role="button">
+          <icon name="{{ item.icon.name }}" variant="{{ item.icon.variant }}" v-if="item.icon"></icon>
+          <a href="{{ item.href }}" v-if="item.href"> {{item.name}}</a>
+          <span v-if="!item.href"> {{item.name}}</span>
+        </span>
+        <div class="dropdown-menu" v-if="item.dropdown">
+            <span 
+              class="dropdown-item btn {{ btnSize }}" \
+              v-bind:class="{ disabled: subitem.disabled, active: subitem.active, 'dropdown-toggle': subitem.dropdown }" 
+              v-for="subitem in item.dropdown" 
+              v-on="click: select(subitem)" 
+              aria-haspopup="true" 
+              aria-expanded="subitem.dropdown.open" 
+              role="button">
+            <icon 
+              name="{{ subitem.icon.name }}" 
+              variant="{{ subitem.icon.variant }}" 
+              v-if="subitem.icon" 
+              aria-haspopup="true" 
+              aria-expanded="false"></icon>
+              <a
+                href="{{ subitem.href }}"
+                v-if="subitem.href"> {{subitem.name}}
+              </a>
+              <span v-if="!subitem.href">{{subitem.name}}</span>
+            </span>
+        </div>
+    </li>
+</ul>
+<div class="tab-content">
+    <div 
+      role="tabpanel" 
+      id="{{ item.id }}" 
+      class="tab-pane fade" 
+      v-bind:class="{ disabled: disabled, active: active, in: animate || !fade }" 
+      v-for="item in flatList">
+      <slot name="tab-{{ $index + 1 }}"></slot>
+    </div>
+</div>

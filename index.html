@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!-- main vue app -->
+<html lang="en" id="app" v-on:click="closeDropdownsAndPopovers">
+<head>
+	<title>Bootstrap 4 web components</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Simplify your web development with extended Bootstrap 4 components.">
+	<meta name="author" content="Kris Zima">
+	<meta name="msapplication-TileImage" content="/assets/favicon.png"/>
+  <meta name="msapplication-TileColor" content=" #563d7c"/>
+	<link href="/assets/favicon.svg" rel="mask-icon" sizes="any"  color="#563d7c">
+	<link href="/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href='dist/vuestrap.css' rel='stylesheet' type='text/css'>
+	<link href='demo/dist/vuestrap-demo.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/tomorrow.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.4/vue.js"></script>
+	<script src="bower_components/tether/dist/js/tether.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>   
+	<!--[if IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+	<![endif]-->
+	<!-- <[if IE]>
+    <script src="bower_components/svg4everybody.min.js"></script>
+		<script>svg4everybody();</script>
+	<![endif]-->
+	<style>
+		html {
+			font-size: 16px;
+		}
+		body {
+			max-width: 55rem;
+			margin: auto;
+			padding: 1.5rem;
+		}
+		h1, h2, h3 {
+			font-family: 'Source Sans Pro', sans-serif;
+			color: #563d7c;
+		}
+		h2 {
+			padding-bottom: 0.3rem;
+  		border-bottom: 1px solid #42b983;
+		}
+		h3 {
+			font-size: 1.3rem !important;
+		}
+		.logo img {
+			height: 64px;
+			width: auto;
+			margin-bottom: 4rem;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="logo text-center">	
+		<img src="assets/logo5.svg" alt="Vuestrap logo">
+	</div>
+	<!--
+	<accordion-demo></accordion-demo>  
+	
+	<alert-demo></alert-demo>
+	<breadcrumb-demo></breadcrumb-demo>
+	<buttons-demo></buttons-demo>-->
+	<!--<button-group-demo></button-group-demo>
+	<button-checkbox-demo></button-checkbox-demo>
+	<button-radio-demo></button-radio-demo>
+	<card-demo></card-demo>
+	<carousel-demo></carousel-demo>  
+	<collapse-demo></collapse-demo>  
+	<dropdown-demo></dropdown-demo>
+	<dropdown-select-demo></dropdown-select-demo>
+	<form-chekbox-demo></form-chekbox-demo>
+	<form-input-demo></form-input-demo>
+	<form-select-demo></form-select-demo>
+	<form-textarea-demo></form-textarea-demo>
+  <form-radio-demo></form-radio-demo>
+	<icons-demo></icons-demo>
+	<images-demo></images-demo>
+	<jumbotron-demo></jumbotron-demo> 
+	<labels-demo></labels-demo>
+	<list-group-demo></list-group-demo>
+	<media-demo></media-demo>
+	<modal-demo></modal-demo>
+	<nav-demo></nav-demo>
+	<navbar-demo></navbar-demo>-->
+	<pager-demo></pager-demo>
+	<pagination-demo></pagination-demo>
+	<popover-demo></popover-demo>
+	<!--<progress-demo></progress-demo>
+	<tables-demo></tables-demo>
+	<tabs-demo></tabs-demo>
+	<tooltip-demo></tooltip-demo> -->
+	
+	<script>
+		// some global stuff for the demo purposes
+		window.demo = {
+			positions: [
+				{text: 'left', value: 'left'},
+				{text: 'right', value: 'right'},
+			],
+			states: [
+				{text: 'default', value: 'default'},
+				{text: 'success', value: 'success'},
+				{text: 'error', value: 'error'},
+				{text: 'warning', value: 'warning'},
+			],
+			variants: [{text: 'default', value: 'default'},
+			 {text: 'primary', value: 'primary'},
+			 {text: 'success', value: 'success'},
+			 {text: 'info', value: 'info'},
+			 {text: 'warning', value: 'warning'},
+			 {text: 'danger', value: 'danger'}
+			],
+			sizes: [
+				{text: 'sm', value: 'sm'},
+				{text: 'md', value: 'md'},
+				{text: 'lg', value: 'lg'}
+			]
+		}
+	</script>
+	<script src="dist/vuestrap.js"></script>
+	<script src="demo/dist/vuestrap-demo.js"></script>
+	
+</body>
+
+</html>

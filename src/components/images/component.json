@@ -1,0 +1,8 @@
+{
+	"name": "Images",
+	"description": "Opt your images into responsive behavior (so they never become larger than their parent elements) and add lightweight styles to them—all via classes.",
+	"dependencies": ["vuestrap/images"],
+	"category": "components",
+	"browserSupport": ["IE9+", "Android 4.3"],
+	"options": []
+}

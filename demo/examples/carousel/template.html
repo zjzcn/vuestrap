@@ -1,0 +1,26 @@
+<example :meta="meta" :snippet="snippet">
+	<!-- Html controls start-->
+	<div slot="controls">
+		<label>controls <input type="checkbox" v-model="controls"></label>
+		<label>indicators <input type="checkbox" v-model="indicators"></label>
+	</div>
+	<!-- Html controls end-->
+	<div slot="markup">
+			<!-- Html markup start-->
+			<carousel
+				:interval="5000",
+				:controls="controls"
+				:indicators="indicators">
+			  <slide>
+			    <img src="http://placehold.it/1200x400?text=one">
+			  </slide>
+			  <slide>
+			    <img src="http://placehold.it/1200x400?text=two">
+			  </slide>
+			  <slide>
+			    <img src="http://placehold.it/1200x400?text=three">
+			  </slide>
+			</carousel>
+			<!-- Html markup end-->
+	</div>
+</example>	

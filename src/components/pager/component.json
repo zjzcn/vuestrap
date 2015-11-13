@@ -1,0 +1,8 @@
+{
+	"name": "Pager",
+	"description": "Quick previous and next links for simple pagination implementations with light markup and styles. It’s great for simple sites like blogs or magazines.",
+	"dependencies": [],
+	"category": "components",
+	"browserSupport": ["IE9+", "Android 4.3"],
+	"options": []
+}

@@ -1,0 +1,17 @@
+{
+	"name": "{component}",
+	"uri": "vuestrap/{component}",
+	"description": "",
+	"dependenices": ["vuestrap/{dependency}"],
+	"category": "components",
+	"browserSupport": ["IE9+", "Android 4.3"],
+	"options": [
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+	]
+}

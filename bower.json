@@ -1,0 +1,37 @@
+{
+  "name": "vuestrap",
+  "version": "0.5.0",
+  "homepage": "https://github.com/gritcode/vuestrap",
+  "authors": [
+    "kzima <kzima@mosquito.ie>"
+  ],
+  "description": "Vuestrap is a library of community web components built with Vue.js and Bootstrap 4",
+  "main": [
+    "dist/vuestrap.js",
+    "dist/vuestrap.js.map",
+    "dist/vuestrap.css",
+    "dist/vuestrap.css.map",
+    "dist/vuestrap.min.js",
+    "dist/vuestrap.min.css"
+  ],
+  "keywords": [
+    "bootstrap",
+    "vue.js",
+    "web-components"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "docs",
+    "src",
+    "favicon.ico",
+    "index.html",
+    "webpack*.js"
+  ],
+  "devDependencies": {
+    "svg4everybody": "~2.0.0",
+    "tether": "~1.1.1"
+  }
+}

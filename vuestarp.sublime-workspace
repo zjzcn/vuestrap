@@ -1,0 +1,1344 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"align",
+				"alignment	(index.js)"
+			],
+			[
+				"stop",
+				"stopPropagation	(index.js)"
+			],
+			[
+				"new",
+				"newState"
+			],
+			[
+				"event",
+				"eventHandler"
+			],
+			[
+				"e",
+				"event"
+			],
+			[
+				"trig",
+				"triggers"
+			],
+			[
+				"hide",
+				"hidePopovers	(index.js)"
+			],
+			[
+				"te",
+				"tether"
+			],
+			[
+				"al",
+				"alignment"
+			],
+			[
+				"bu",
+				"button	(index.js)"
+			],
+			[
+				"defalu",
+				"defaultOption	(index.js)"
+			],
+			[
+				"la",
+				"labelClass	(form-input.html)"
+			],
+			[
+				"na",
+				"navbar"
+			],
+			[
+				"button",
+				"buttonCheckbox	(index.js)"
+			],
+			[
+				"butt",
+				"buttonCheckbox"
+			],
+			[
+				"ea",
+				"example"
+			],
+			[
+				"se",
+				"section"
+			],
+			[
+				"comp",
+				"component	(index.js)"
+			],
+			[
+				"t",
+				"template"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"ale",
+				"alertDocs"
+			],
+			[
+				"plu",
+				"pluginsDev"
+			],
+			[
+				"plugins",
+				"pluginsDist"
+			],
+			[
+				"com",
+				"components	(index.html)"
+			],
+			[
+				"ove",
+				"overflow"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"model",
+				"modelObject"
+			],
+			[
+				"f",
+				"for	for (…) {…}"
+			],
+			[
+				"fo",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"busines",
+				"businessName"
+			],
+			[
+				"con",
+				"conditions"
+			],
+			[
+				"complaint",
+				"complaint_email	(optout.php)"
+			],
+			[
+				"ha",
+				"hashed_email"
+			],
+			[
+				"cma",
+				"cma_id"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"pad",
+				"padding-right"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"table",
+				"table-row"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"ver",
+				"vertical-align"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"ve",
+				"vertical-align"
+			],
+			[
+				"Ap",
+				"API_MODE"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"cli",
+				"clients"
+			],
+			[
+				"i",
+				"image-overlay"
+			],
+			[
+				"dis",
+				"dismiss	(_alert.js)"
+			],
+			[
+				"node",
+				"node_modules	(webpack.config.js)"
+			],
+			[
+				"vue",
+				"vuestrap"
+			],
+			[
+				"thm",
+				"themes"
+			],
+			[
+				"them",
+				"themeLoader"
+			],
+			[
+				"def",
+				"defaultOption"
+			],
+			[
+				"de",
+				"description	(app.html)"
+			],
+			[
+				"req",
+				"required	(alert.js)"
+			],
+			[
+				"dismi",
+				"dismiss	(alert.html)"
+			],
+			[
+				"mi",
+				"mixins	(README.md)"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"sh",
+				"showJsonResponse"
+			],
+			[
+				"not",
+				"notifier"
+			],
+			[
+				"name",
+				"namespace	(Notifier.php)"
+			],
+			[
+				"err",
+				"errorClass"
+			],
+			[
+				"__",
+				"__construct	(Notifier.php)"
+			],
+			[
+				"ema",
+				"emailDomain"
+			],
+			[
+				"fee",
+				"feedbackLoop"
+			],
+			[
+				"pr",
+				"privacy"
+			],
+			[
+				"copy",
+				"copyoptouturl"
+			],
+			[
+				"pre",
+				"previewMode	(index.php)"
+			],
+			[
+				"cop",
+				"copyoptouturl"
+			],
+			[
+				"acce",
+				"accessKey"
+			],
+			[
+				"jso",
+				"json_decode($body"
+			],
+			[
+				"OU",
+				"OUTPUT_FILE_PREFIX"
+			],
+			[
+				"is",
+				"isAjax"
+			],
+			[
+				"complaintE",
+				"complaint_email"
+			],
+			[
+				"che",
+				"check_email	(index.php)"
+			],
+			[
+				"str_",
+				"str_replace"
+			],
+			[
+				"acc",
+				"accessKey"
+			],
+			[
+				"gene",
+				"generate_email"
+			],
+			[
+				"fun",
+				"function	(variables.less)"
+			],
+			[
+				"nora",
+				"normal"
+			],
+			[
+				"co",
+				"container"
+			],
+			[
+				"clie",
+				"client_data_raw	(index.php)"
+			],
+			[
+				"client",
+				"client_data"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"c",
+				"coloumn"
+			],
+			[
+				"curre",
+				"currentPage"
+			],
+			[
+				"and",
+				"android-checkbox-outline"
+			],
+			[
+				"sort",
+				"sortBy"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"cur",
+				"currentRoute	(app.js)"
+			],
+			[
+				"st",
+				"status	(list.js)"
+			],
+			[
+				"fil",
+				"filters"
+			],
+			[
+				"le",
+				"length	(list.js)"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"todo",
+				"todoResponse"
+			],
+			[
+				"tod",
+				"todoResponse"
+			],
+			[
+				"to",
+				"todoData"
+			],
+			[
+				"ac",
+				"action	(list.html)"
+			],
+			[
+				"curr",
+				"currentPage"
+			],
+			[
+				"per",
+				"perPage"
+			],
+			[
+				"sele",
+				"select"
+			],
+			[
+				"add",
+				"addEventListener	(main.js)"
+			],
+			[
+				"s",
+				"select	(select.js)"
+			],
+			[
+				"app-",
+				"app-dropdown"
+			],
+			[
+				"he",
+				"height	(button.styl)"
+			],
+			[
+				"select",
+				"selected	(list.html)"
+			],
+			[
+				"app",
+				"app-icon"
+			],
+			[
+				"in",
+				"inline	(pagination.styl)"
+			],
+			[
+				"lo",
+				"log"
+			],
+			[
+				"pro",
+				"profileData"
+			],
+			[
+				"fie",
+				"field_name"
+			],
+			[
+				"NO",
+				"Normalize	(normalize.styl)"
+			],
+			[
+				"di",
+				"direction"
+			],
+			[
+				"show",
+				"showModal1	(app.html)"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"light",
+				"lighten"
+			],
+			[
+				"but",
+				"buttton-size"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"disa",
+				"disabled	(spinner.styl)"
+			],
+			[
+				"compo",
+				"components"
+			],
+			[
+				"mock",
+				"mockId"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/index.js",
+			"settings":
+			{
+				"buffer_size": 2006,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "demo/index.js",
+			"settings":
+			{
+				"buffer_size": 2897,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/popover/index.js",
+			"settings":
+			{
+				"buffer_size": 4176,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/tooltip/index.js",
+			"settings":
+			{
+				"buffer_size": 4129,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "inst",
+		"selected_items":
+		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"prv",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"toggle",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"intsll",
+				"Package Control: Install Package"
+			],
+			[
+				"intall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/kris/Projects/vuestrap.com/node_modules/.bin",
+		"/C/Users/kris/Projects/vuestrap",
+		"/C/Users/kris/Projects/vuestrap/bower_components/tether/dist",
+		"/C/Users/kris/Projects/vuestrap/bower_components/tether/dist/js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/alert",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/breadcrumb",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-checkbox",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-group",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-radio",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/popover",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/tooltip",
+		"/C/Users/kris/Projects/vuestrap/node_modules/tether/dist",
+		"/C/Users/kris/Projects/vuestrap/node_modules/tether/dist/js",
+		"/C/Users/kris/Projects/vuestrap/node_modules/tether/src",
+		"/C/Users/kris/Projects/vuestrap/src",
+		"/C/Users/kris/Projects/vuestrap/src/components/alert",
+		"/C/Users/kris/Projects/vuestrap/src/components/breadcrumb",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-checkbox",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-group",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-radio",
+		"/C/Users/kris/Projects/vuestrap/src/theme"
+	],
+	"file_history":
+	[
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-radio/template.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/alert/template.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/alert/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/popover/component.json",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/popover/template.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/popover/snippet.html",
+		"/C/Users/kris/Projects/vuestrap/index.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-checkbox/index.js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-checkbox/template.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-radio/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-radio/button-radio.html",
+		"/C/Users/kris/Projects/optizmo/package.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-checkbox/button-checkbox.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/tooltip/component.json",
+		"/C/Users/kris/Projects/optizmo/webpack.config.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/alert/index.js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/breadcrumb/template.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-group/template.html",
+		"/C/Users/kris/Projects/vuestrap/demo/components/example/example.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/tooltip/template.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/tooltip/tooltip.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/popover/popover.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/tooltip/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/core/grid/_bootstrap.scss",
+		"/C/Users/kris/Projects/vuestrap/src/core/normalize/_normalize.scss",
+		"/C/Users/kris/Projects/vuestrap/src/core/utilities/_type.scss",
+		"/C/Users/kris/Projects/vuestrap/src/core/utilities/_utilities.scss",
+		"/C/Users/kris/Projects/vuestrap/src/components/alert/_alert.scss",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-group/_button-group.scss",
+		"/C/Users/kris/Projects/vuestrap/src/components/dropdown-select/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/dropdown-select/dropdown-select.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/dropdown-select/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/dropdown/_dropdown.scss",
+		"/C/Users/kris/Projects/vuestrap/src/components/navbar/_navbar.scss",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/popover/index.js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-group/snippet.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/tooltips/template.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/tooltips/index.js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-checkbox/snippet.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/alert/snippet.html",
+		"/C/Users/kris/Projects/vuestrap.com/src/main.js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/popver/template.html",
+		"/C/Users/kris/Projects/vuestrap/dist/vuestrap.js",
+		"/C/Users/kris/Projects/vuestrap/demo/dist/vuestrap-demo.js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-radio/index.js",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-radio/snippet.html",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/popver/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-checkbox/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-radio/component.json",
+		"/C/Users/kris/Projects/vuestrap/demo/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/alert/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-checkbox/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-input/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-radio/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-select/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-textarea/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/icons/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/jumbotron/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/labels/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/media/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/modal/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/nav/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/progress/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/tables/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/tabs/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/dropdown/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/card/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-group/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/breadcrumb/component.json",
+		"/C/Users/kris/Projects/vuestrap/demo/examples/button-group/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/pagination/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/tabs/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/tabs/tabs.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/progress/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/tables/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/tables/tables.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/tooltip/tooltip.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/popover/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/progress/progress.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/labels/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/nav/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/dropdown/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/button-checkbox/index.js",
+		"/C/Users/kris/Projects/vuestrap/node_modules/vuestrap-tether/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/media/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/dropdown/dropdown.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/pagination/pagination.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/navbar/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/pagination/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/_template/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/theme/_variables.scss",
+		"/C/Users/kris/Projects/vuestrap/src/components/pager/pager.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/pager/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/pager/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/navbar/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/list-group/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/images/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/pagination/pagination.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/navbar/navbar.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/media/media.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/card/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/nav/nav.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/modal/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/modal/modal.html",
+		"/C/Users/kris/Projects/vuestrap/.eslintrc",
+		"/C/Users/kris/Projects/vuestrap/src/components/list-group/list-group.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/jumbotron/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/jumbotron/jumbotron.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/list-group/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/modal/modal.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/jumbotron/jumbotron.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/list-group/list-group.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/labels/labels.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/icons/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/images/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/icons/_variables.scss",
+		"/C/Users/kris/Projects/vuestrap/src/components/icons/icons.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/icons/_icons.scss",
+		"/C/Users/kris/Projects/vuestrap/src/components/images/images.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/images/images.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-textarea/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-textarera/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/icons/icon.html",
+		"/C/Users/kris/Projects/vuestrap/src/components/forms/index.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-textarera/component.json",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-textarera/form-textarea.js",
+		"/C/Users/kris/Projects/vuestrap/src/components/form-select/index.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"C:\\Users\\kris\\Projects\\vuestrap\\src",
+			"C:\\Users\\kris\\Projects\\vuestrap",
+			"C:\\Users\\kris\\Projects\\vuestrap\\src\\components",
+			"C:\\Users\\kris\\Projects\\vuestrap",
+			"C:\\Users\\kris\\Projects\\vuestrap\\src\\components",
+			"C:\\Users\\kris\\Projects\\vuestrap\\src",
+			"C:\\Users\\kris\\Projects\\vuestrap\\src\\components",
+			"C:\\Users\\kris\\Projects\\vuestrap\\src",
+			"C:\\Users\\kris\\Projects\\vuestrap\\node_modules",
+			"C:\\Users\\kris\\Projects\\optout-collector\\src\\less",
+			"C:\\Users\\kris\\Projects\\optout-collector\\src\\less\\mixins",
+			"C:\\Users\\kris\\Projects\\vuestrap.com\\node_modules\\vuestrap\\core",
+			"C:\\Users\\kris\\Projects\\vuestrap-starter\\node_modules\\vuestrap",
+			"C:\\Users\\kris\\Projects\\vuestrap-starter\\node_modules\\vuestrap\\mixins",
+			"C:\\Users\\kris\\Projects\\vuestrap-starter\\node_modules\\vuestrap",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\components",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\mixins",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\core",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\components",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\old",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\old\\components",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\old",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\components",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\components",
+			"C:\\Users\\kris\\Projects\\gritcode\\src\\modules\\todo\\views",
+			"C:\\Users\\kris\\Projects\\optout-collector\\vendor\\airbrake\\phpbrake\\src",
+			"C:\\Users\\kris\\Projects\\optout-collector\\src\\less",
+			"C:\\Users\\kris\\Projects\\gritcode-optout\\less\\mixins",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\components",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components\\modules",
+			"C:\\Users\\kris\\Projects\\gritcode\\src\\modules\\todo",
+			"C:\\Users\\kris\\Projects\\gritcode\\src\\modules\\todo\\views",
+			"C:\\Users\\kris\\Projects\\gritcode\\src",
+			"C:\\Users\\kris\\Projects\\gritcode\\components\\vue-components",
+			"C:\\Users\\kris\\Projects\\gritcode\\src",
+			"C:\\Users\\kris\\Projects\\gritcode\\node_modules\\json-server\\src\\cli",
+			"C:\\Users\\kris\\Projects\\gritcode\\node_modules\\json-server\\src\\server",
+			"C:\\Users\\kris\\Projects\\gritcode\\node_modules\\json-server\\src\\server\\router",
+			"C:\\Users\\kris\\Projects\\gritcode\\node_modules\\json-server",
+			"E:\\projects\\gritcode\\components\\vue-components\\components",
+			"E:\\projects\\gritcode\\components\\bootstrap-master\\less\\mixins",
+			"E:\\projects\\gritcode\\components\\vue-components",
+			"E:\\projects\\gritcode\\components\\vue-components\\components",
+			"E:\\projects\\gritcode\\components\\vue-components",
+			"E:\\projects\\gritcode\\src",
+			"E:\\projects\\gritcode\\src\\modules\\todo",
+			"E:\\projects\\gritcode\\src\\application",
+			"E:\\projects\\gritcode\\components\\vue-components",
+			"E:\\projects\\gritcode\\components",
+			"E:\\projects\\gritcode\\src",
+			"E:\\projects\\gritcode\\components\\bootstrap-master",
+			"E:\\projects\\gritcode\\utils",
+			"E:\\projects\\gritcode\\node_modules",
+			"E:\\projects\\gritcode\\components\\vue-components",
+			"E:\\projects\\gritcode\\src",
+			"E:\\projects\\gritcode\\node_modules",
+			"E:\\projects\\gritcode\\node_modules\\style-loader",
+			"E:\\projects\\gritcode\\src",
+			"E:\\projects\\anyform",
+			"E:\\projects\\recurring-tasks\\www\\js",
+			"E:\\_downloads\\chrome-app-samples-master\\chrome-app-samples-master\\samples",
+			"E:\\projects\\gritcode\\src\\modules\\campaigns",
+			"E:\\projects\\gritcode\\node_modules\\vue\\src\\directives",
+			"E:\\projects\\gritcode\\node_modules\\vue",
+			"E:\\projects\\gritcode\\node_modules\\vue\\src",
+			"E:\\projects\\gritcode\\src",
+			"E:\\projects\\gritcode",
+			"E:\\projects\\gritcode\\src",
+			"E:\\projects\\gritcode",
+			"E:\\projects\\gritcode\\build",
+			"E:\\projects\\laravel"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"	    :",
+			"-bind",
+			"popover",
+			"code",
+			"aligment",
+			"alignment",
+			"span",
+			"xxx",
+			"edddfd",
+			"test button",
+			"{component}",
+			"popover",
+			"_trigger",
+			"_triggeraddEventListener",
+			"trigger.",
+			"trigger",
+			"console.log",
+			"toggle",
+			";",
+			"$",
+			"DEMO",
+			": ",
+			"popver",
+			"{component}",
+			"{{ ",
+			"buttonRadio.",
+			"src",
+			"\"false\"",
+			"\"true\"",
+			" \"false\"",
+			"\"true\"",
+			"\"false\"",
+			"\"true\"",
+			"\"false\"",
+			"\"true\"",
+			"\"false\"",
+			"\"true\"",
+			"true",
+			"\"true\"",
+			"buttonRadioDemo",
+			"popover",
+			"v-class",
+			"v-repeat",
+			"{component}",
+			";",
+			"progress",
+			"{component}",
+			"progress-bar-stripes",
+			"{component}",
+			"tether",
+			"aligment",
+			"align",
+			"align\nalign",
+			"alignment",
+			"popver",
+			"<content",
+			"{dependency}",
+			"{component}",
+			"{dependency}",
+			"{component}",
+			"scheme",
+			"context",
+			"-group",
+			"{dependency}",
+			"{component}",
+			"'",
+			";",
+			";\n      return (result < 1) ? 1 : result;",
+			"function",
+			"repear",
+			"v-on",
+			"v-class",
+			"pager",
+			"state",
+			"v-on",
+			":class",
+			":class=\"",
+			"class=\"",
+			"v-class",
+			"{dependency}",
+			"{component}",
+			"this",
+			"(function() =>",
+			"function",
+			";",
+			"{dependency}",
+			"{component}",
+			"v-on",
+			"v-class",
+			"content",
+			"{dependency}",
+			"{component}",
+			"{dependency}",
+			"{component}.",
+			"'",
+			"{component}",
+			"btn",
+			"{component}",
+			";",
+			"{dependency}",
+			"{component}",
+			"dependency",
+			"formTex",
+			"formTer",
+			"textA",
+			"formCheckbox",
+			"v-class",
+			"repeat",
+			"{component}",
+			"\"",
+			";",
+			"\"\"",
+			"var",
+			"function",
+			";",
+			"+ ",
+			"'",
+			"{dependency}",
+			"{component}",
+			";",
+			"\"",
+			" \"",
+			"defaultOption",
+			"value",
+			";",
+			"{dependency}",
+			"'",
+			"{component}"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"position",
+			"vue-",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2006,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1669,
+								1680
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded) (SL).tmTheme",
+							"function_name_status_row": 50,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 228.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "demo/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2864,
+								2864
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded) (SL).tmTheme",
+							"function_name_status_row": 74,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 684.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "src/components/popover/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4176,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1353,
+								2127
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded) (SL).tmTheme",
+							"function_name_status_row": 65,
+							"spell_check": true,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 969.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/components/tooltip/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4129,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2074,
+								2074
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai (Colorcoded) (SL).tmTheme",
+							"function_name_status_row": 86,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 627.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.689996735991,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 118.0
+	},
+	"output.xdebug":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "/C/Users/kris/vuestrap.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"popev",
+				"vuestrap\\demo\\examples\\popver\\index.js"
+			],
+			[
+				"popver",
+				"vuestrap\\src\\components\\popover\\popover.html"
+			],
+			[
+				"wizard.js",
+				"src\\components\\wizard.js"
+			],
+			[
+				"add.html",
+				"src\\modules\\alerts\\views\\add\\add.html"
+			],
+			[
+				"add.js",
+				"src\\modules\\alerts\\views\\add\\add.js"
+			],
+			[
+				"main",
+				"src\\main.js"
+			],
+			[
+				"index.",
+				"index.php"
+			],
+			[
+				"table",
+				"components\\vue-components\\modules\\table.html"
+			],
+			[
+				"lis",
+				"src\\modules\\todo\\views\\list\\list.js"
+			],
+			[
+				"app",
+				"src\\application\\app.js"
+			],
+			[
+				"tab",
+				"components\\vue-components\\modules\\table.html"
+			],
+			[
+				"utils",
+				"src\\services\\Utils.js"
+			],
+			[
+				"list",
+				"src\\modules\\todo\\views\\list\\list.html"
+			],
+			[
+				"list.js",
+				"src\\modules\\todo\\views\\list\\list.js"
+			],
+			[
+				"button",
+				"components\\vue-components\\components\\button.styl"
+			],
+			[
+				"app.styl",
+				"src\\application\\app.styl"
+			],
+			[
+				"app.st",
+				"src\\application\\app.styl"
+			],
+			[
+				"edit",
+				"src\\modules\\todo\\views\\edit\\edit.html"
+			],
+			[
+				"login",
+				"resources\\views\\auth\\login.blade.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 750.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\kris\\Projects\\mockdesigner_projevt.sublime-workspace"
+			]
+		],
+		"width": 570.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"last_automatic_layout":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		]
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

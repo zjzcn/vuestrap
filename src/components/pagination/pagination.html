@@ -1,0 +1,14 @@
+<div class="btn-group pagination" role="group" aria-label="Pagination">
+    <button type="button" class="btn {{btnSize}} btn-secondary" v-bind:class="{ disabled: currentPage == 1 }" v-on:click="(currentPage == 1) ? return : currentPage--"><span aria-hidden="true">&laquo;</span></button>
+    <button type="button" class="btn {{btnSize}} btn-secondary" v-bind:class="{ active: currentPage == 1 }" v-on:click="currentPage = 1" v-show="showPrev">1</button>
+    <span class="btn {{btnSize}} btn-secondary" v-show="showPrev">...</span>
+    <button type="button"
+    	class="btn {{btnSize}} {{btnVariant($index)}}"
+    	v-for="item in pageLinks"
+        v-bind:class="{ active: $index + diff == currentPage, 'hidden-xs-down': $index + diff != currentPage }" 
+        v-on:click="currentPage = $index + diff">{{$index + diff}}
+    </button>
+    <span class="btn {{btnSize}} btn-secondary" v-show="showNext">...</span>
+    <button type="button" class="btn {{btnSize}} btn-secondary" v-bind:class="{ active: numberOfPages == currentPage }" v-show="showNext" v-on:click="currentPage = numberOfPages">{{numberOfPages}}</button>
+    <button type="button" class="btn {{btnSize}} btn-secondary" v-bind:class="{ disabled: currentPage == numberOfPages }" v-on:click="(currentPage == numberOfPages) ? return : currentPage++"><span aria-hidden="true">&raquo;</span></button>
+</div>

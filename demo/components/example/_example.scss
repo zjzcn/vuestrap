@@ -1,0 +1,73 @@
+$example-gray: #f7f7f9;
+
+.example {
+	margin-bottom: 4rem;
+	.code-example {
+		position: relative;
+	  margin-left: 0;
+	  margin-right: 0;
+	  margin-bottom: 2rem;
+	  padding: 1rem;
+	  padding-bottom: 0;
+	  border: solid $example-gray;
+	  border-width: .2rem;
+	  > .inverse {
+			background-color: #898989;
+			padding: 0.2em;
+		}
+	}
+	.highlight {
+	  padding: 1rem;
+	  margin: 1rem -1rem;
+	  background-color: $example-gray;
+	  margin-bottom: 0;
+	}
+	.hljs {
+		background-color: transparent;
+		padding: 0;
+		direction: ltr;
+		text-align: left;
+		white-space: pre;
+		word-spacing: normal;
+		word-break: normal;
+		word-wrap: normal;
+		line-height: 1.5;
+	}
+	.table code {
+		display:inline-block;
+		margin-right: 2px;
+		margin-bottom: 2px;
+	}
+	.table td {
+		width: 10%;
+	}
+	table td:nth-child(1) {
+		color: #563d7c;
+	}
+	table td:nth-child(5) {
+		width: 50%;
+	}
+	[slot="controls"] {
+		background-color: $example-gray;
+		padding: 1rem;
+	}
+	[slot="controls"] label {
+		margin-bottom: 0;
+		margin-right: 0.5rem;
+	}
+	.label {
+		margin-right: 0.5rem;
+	}
+	> .label {
+		background-color: #563d7c;
+	}
+	.alert {
+		border-right-color: darken($example-gray, 6%);
+		border-top-color: darken($example-gray, 6%);
+		border-bottom-color: darken($example-gray, 6%);
+		border-left-width: 5px;
+		.icons {
+			vertical-align: text-bottom;
+		}
+	}
+}

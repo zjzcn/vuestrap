@@ -1,0 +1,35 @@
+<example :meta="meta" :snippet="snippet">
+	<div slot="controls">
+		<!-- Html controls start-->
+		<label>
+			size
+			<select v-model="size">
+				<option v-for="option in sizes" v-bind:value="option.value">
+			    {{ option.text }}
+			  </option>
+			</select>
+		</label>
+
+		<label>
+			variant
+			<select v-model="variant">
+				<option v-for="option in variants" v-bind:value="option.value">
+			    {{ option.text }}
+			  </option>
+			</select>
+		</label>
+		<!-- Html controls end-->
+	</div>
+	<div slot="markup" v-bind:class="{ inverse: variant == 'light' }">
+			<!-- Html markup start-->
+			<icon name="info" :size="size" :variant="variant"></icon>
+			<icon name="info" background="circle-outline" :size="size" :variant="variant"></icon>
+			<icon name="info" background="circle-fill" :size="size" :variant="variant"></icon>
+			<icon background="circle-fill" :size="size" :variant="variant" text="1"></icon>
+			<icon background="circle-outline" :size="size" :variant="variant" text="1"></icon>
+			<icon background="circle-outline" :size="size" :variant="variant" text="2"></icon>
+			<icon background="circle-outline" :size="size" :variant="variant" text="11"></icon>
+			<button class="btn btn-md"><icon name="cog" :size="'md'" :variant="variant"></icon> settings</button>
+			<!-- Html markup end-->
+	</div>
+</example>	

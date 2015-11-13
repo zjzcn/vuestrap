@@ -1,0 +1,72 @@
+{
+	"name": "Tables",
+	"description": "For tabular data.",
+	"dependenices": ["vuestrap/{dependency}"],
+	"category": "components",
+	"browserSupport": ["IE9+", "Android 4.3"],
+	"options": [
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		}
+		,{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+		{
+			"name": "",
+			"type": "",
+			"default": "''",
+			"required": false,
+			"description": ""
+		},
+	]
+}
