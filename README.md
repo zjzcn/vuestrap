@@ -1,3 +1,9 @@
+NOTE* This project is depreciated and will be removed by the end of the year. 
+
+It has been replaced with [vuestrap](https://github.com/kzima/vuestrap) and [vuestrap web components](https://github.com/kzima/vuestrap-base-components).
+
+If you are looking for svg icons component, please see [vuestrap-icons](https://github.com/kzima/vuestrap-icons) project.
+
 VueStrap
 ========
 Extend Bootstrap 4 with extra "plug and play" components and simplify your web development.
@@ -10,7 +16,7 @@ The idea
 --------
 - cherry pick components from library
 - cleaner code thanks to custom tags
-- any component within application has consistent look and feel 
+- any component within application has consistent look and fel 
 - easy to theme
 - support for SVG icons from Open Iconic — www.useiconic.com/open
 
